@@ -1,26 +1,21 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ParticleWave from "../components/ParticleWave";
+import Navbar from "@/components/Navbar";
 
-export const metadata: Metadata = {
-  title: "NSC Star Connect",
-  description: "Internet Cepat Sampai Pelosok Negeri",
+export const metadata = {
+  title: "Starlink",
+  description: "Clone by NSC",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className="antialiased bg-black text-white">
+    <html lang="id" suppressHydrationWarning>
+      <body className="bg-black text-white antialiased" suppressHydrationWarning>
         <Navbar />
-        <ParticleWave />
         {children}
-        <Footer />
       </body>
     </html>
   );

@@ -1,144 +1,333 @@
-import React from 'react';
+import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen text-white font-sans overflow-x-hidden">
+    <main className="w-full bg-black">
+      
+      {/* --- SECTION 1: HERO --- */}
+      <section className="relative flex min-h-screen w-full flex-col items-center justify-between overflow-hidden pt-32 pb-12">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero.webp" 
+            alt="Starlink Background"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+        </div>
 
-      {/* =========================================
-          2. HERO SECTION
-      ========================================= */}
-      <section className="relative w-full h-screen flex items-center justify-center bg-black">
-        <div className="absolute inset-0 z-0 bg-cover bg-center opacity-60 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')]"></div>
-        
-        <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-5xl mt-16">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight uppercase mb-6 drop-shadow-lg">
-            Internet Cepat Sampai <br className="hidden md:block"/> Pelosok Negeri
+        <div className="relative z-10 mt-8 flex flex-col items-center px-4 text-center">
+          <h1 className="mb-4 text-4xl font-bold uppercase leading-tight tracking-tight text-white drop-shadow-xl md:text-5xl lg:text-6xl">
+            Internet Berkecepatan Tinggi<br />
+            Sampai<br />
+            Pelosok Negeri
           </h1>
-          <p className="text-base md:text-xl text-gray-200 mb-10 max-w-3xl drop-shadow-md leading-relaxed">
-            Kami hadir untuk memberikan layanan konektivitas tanpa batas di seluruh pelosok negeri hingga wilayah terpencil. Melalui satelit, kami berdedikasi untuk selalu memberikan pelayanan terbaik sesuai dengan kebutuhan Anda.
+          <p className="text-base text-gray-100 drop-shadow-md md:text-lg">
+            Layanan konektivitas tanpa batas di seluruh pelosok negeri<br />
+            Hingga <span className="font-bold decoration-white">Wilayah Terpencil</span>
           </p>
-          <button className="px-10 py-4 bg-white text-black hover:bg-gray-200 font-bold uppercase tracking-widest rounded-sm transition-all duration-300 w-full sm:w-auto">
-            Selengkapnya
-          </button>
         </div>
-        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent z-0"></div>
+
+        <div className="relative z-10 mt-[50px] flex w-full max-w-[1500px] flex-col gap-6 px-6 md:flex-row">
+          {/* Card 1: Residensial */}
+          <div className="flex flex-1 flex-col justify-between rounded-xl border border-gray-500/50 bg-[#111111]/20 p-8 backdrop-blur-md">
+            <div>
+              <h2 className="mb-2 text-2xl font-bold text-white uppercase">Residensial</h2>
+              <p className="mb-4 text-sm text-gray-300">Dengan Akastar di rumah Anda, nikmati internet super cepat tanpa batasan. Streaming video, bermain game, dan bekerja dari rumah akan menjadi lebih lancar daripada sebelumnya. Jadikan rumah Anda pusat konektivitas yang tak tertandingi.</p>
+              <p className="mb-8 text-sm font-bold text-white">Mulai di bawah ini untuk melihat paket dan harga</p>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
+                Mulai
+              </button>
+              <button className="border border-white bg-transparent px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
+                Pelajari Selengkapnya
+              </button>
+            </div>
+          </div>
+
+          {/* Card 2: Jelajah */}
+          <div className="flex flex-1 flex-col justify-between rounded-xl border border-gray-500/50 bg-[#111111]/20 p-8 backdrop-blur-md">
+            <div>
+              <h2 className="mb-2 text-2xl font-bold text-white uppercase">Mobile (Roam)</h2>
+              <p className="mb-4 text-sm text-gray-300">Tidak perlu lagi khawatir tentang koneksi saat bepergian. Akastar membuat Anda tetap terhubung di mana pun Anda berada. Browsing, streaming, dan komunikasi seluler tak pernah semudah ini, bahkan di tempat-tempat terpencil.</p>
+              <p className="mb-8 text-sm font-bold text-white">Mulai di bawah ini untuk melihat paket dan harga</p>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
+                Mulai
+              </button>
+              <button className="border border-white bg-transparent px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
+                Pelajari Selengkapnya
+              </button>
+            </div>
+          </div>
+
+          {/* Card 3: Jelajah */}
+          <div className="flex flex-1 flex-col justify-between rounded-xl border border-gray-500/50 bg-[#111111]/20 p-8 backdrop-blur-md">
+            <div>
+              <h2 className="mb-2 text-2xl font-bold text-white uppercase">Maritime</h2>
+              <p className="mb-4 text-sm text-gray-300">Tingkatkan petualangan di laut dengan Akastar. Dengan koneksi internet yang cepat di kapal atau perahu Anda, Anda dapat tetap terhubung dengan dunia, mengakses navigasi online, berbagi pengalaman dengan teman-teman, dan mengejar hobi favorit Anda tanpa hambatan.</p>
+              <p className="mb-8 text-sm font-bold text-white">Mulai di bawah ini untuk melihat paket dan harga</p>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
+                Mulai
+              </button>
+              <button className="border border-white bg-transparent px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
+                Pelajari Selengkapnya
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* =========================================
-          3. PRODUCT: RESIDENTIAL
-      ========================================= */}
-      <section className="relative w-full h-[80vh] flex items-center justify-end px-6 md:px-24 bg-black">
-        <div className="absolute inset-0 z-0 bg-cover bg-center opacity-40 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')]"></div>
-        <div className="absolute inset-0 z-0 bg-gradient-to-l from-black via-black/80 to-transparent"></div>
+      {/* --- SECTION 2: KONEKTIVITAS --- */}
+      <section className="flex w-full flex-col items-center justify-center bg-black px-6 py-32 text-center">
+        <h2 className="mb-6 max-w-5xl text-3xl font-bold uppercase tracking-tight text-white md:text-5xl lg:text-[44px] leading-tight">
+          KONEKTIVITAS CEPAT SAMPAI PELOSOK NEGERI, KAPAN SAJA ANDA BUTUHKAN
+        </h2>
         
-        <div className="relative z-10 max-w-xl text-right">
-          <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6">Residential</h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            Dengan <span className="font-bold text-white">Akastar</span> di rumah Anda, nikmati internet super cepat tanpa batasan. Streaming video, bermain game, dan bekerja dari rumah akan menjadi lebih lancar daripada sebelumnya. 
-            Jadikan rumah Anda pusat konektivitas yang tak tertandingi.
-          </p>
-          <a href="#" className="text-nsc-orange font-bold uppercase tracking-wider hover:underline decoration-2 underline-offset-4">Pelajari Selengkapnya</a>
-        </div>
-      </section>
-
-      {/* =========================================
-          4. PRODUCT: MOBILE (ROAM)
-      ========================================= */}
-      <section className="relative w-full h-[80vh] flex items-center justify-start px-6 md:px-24 bg-black">
-         <div className="absolute inset-0 z-0 bg-cover bg-center opacity-40 bg-[url('https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=2070&auto=format&fit=crop')]"></div>
-         <div className="absolute inset-0 z-0 bg-gradient-to-r from-nsc-navy to-transparent"></div>
-
-         <div className="relative z-10 max-w-xl text-left">
-          <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6">Mobile (Roam)</h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            Tidak perlu lagi khawatir tentang koneksi saat bepergian. Akastar membuat Anda tetap terhubung di mana pun Anda berada. Browsing, streaming, dan komunikasi seluler tak pernah semudah ini, bahkan di tempat-tempat terpencil.
-          </p>
-          <a href="#" className="text-nsc-orange font-bold uppercase tracking-wider hover:underline decoration-2 underline-offset-4">Pesan Sekarang</a>
-        </div>
-      </section>
-
-      {/* =========================================
-          5. PRODUCT: MARITIME
-      ========================================= */}
-      <section className="relative w-full h-[80vh] flex items-center justify-end px-6 md:px-24 bg-black">
-        <div className="absolute inset-0 z-0 bg-cover bg-center opacity-40 bg-[url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=2094&auto=format&fit=crop')]"></div>
-        <div className="absolute inset-0 z-0 bg-gradient-to-l from-black via-black/80 to-transparent"></div>
+        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.15em] text-gray-300">
+          Tersebar di seluruh wilayah indonesia sampai pelosok negeri
+        </p>
         
-        <div className="relative z-10 max-w-xl text-right">
-          <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6">Maritime</h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            Tingkatkan petualangan di laut dengan Akastar. Dengan koneksi internet yang cepat di kapal atau perahu Anda, Anda dapat tetap terhubung dengan dunia, mengakses navigasi online, berbagi pengalaman dengan teman-teman, dan mengejar hobi favorit Anda tanpa hambatan.
-          </p>
-          <button className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-black font-bold uppercase tracking-widest rounded-sm transition-all duration-300 mt-4">
-            Jelajahi Maritime
-          </button>
-        </div>
+        <button className="group flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-white transition-opacity hover:opacity-70">
+          <span className="border-b border-transparent pb-0.5 group-hover:border-white transition-colors">
+            PERIKSA KETERSEDIAAN DAN PAKET DI AREA ANDA
+          </span>
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </section>
 
-      {/* =========================================
-          6. EDUKASI LEO vs GEO
-      ========================================= */}
-      <section className="w-full flex flex-col-reverse md:flex-row bg-transparent">
-        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-20 py-20 relative">
-          <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'repeating-radial-gradient(circle at 0 0, transparent 0, #0B192C 1px, transparent 1px, transparent 40px)' }}></div>
-          
-          <div className="relative z-10">
-            <h2 className="text-4xl font-bold uppercase mb-6">LEO SAT <br/> Educational Heading</h2>
-            <p className="text-gray-400 text-base leading-relaxed mb-8">
-              Berdedikasi untuk memberikan konektivitas di seluruh wilayah Indonesia, kami memberikan edukasi yang mendalam tentang Orbit satelit. Ada dua kategori orbit yang perlu dipahami, mulai dari <span className="text-white font-bold">GEO (Geostationary Earth Orbit)</span> dan <span className="text-white font-bold">LEO (Low Earth Orbit)</span>.
-              <br/><br/>
-              Kedua kategori orbit satelit ini memiliki karakteristik serta kegunaan yang unik dan kegunaan yang berbeda. Namun persamaannya adalah keduanya memiliki peran yang penting dalam infrastruktur satelit global untuk dapat memenuhi berbagai kebutuhan komunikasi dan penelitian.
+      {/* --- SECTION 3: ANDAL & TANGGUH --- */}
+      <section className="relative h-screen w-full overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero2.webp"
+            alt="Andal dan Tangguh"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/20 to-transparent"></div>
+        </div>
+
+        <div className="relative z-10 flex h-full flex-col items-end justify-start px-8 pt-32 md:px-16 lg:px-24 md:pt-40">
+          <div className="max-w-lg text-left">
+            <h2 className="mb-6 text-3xl font-bold uppercase leading-tight tracking-tight text-white drop-shadow-md md:text-4xl">
+              AKASTAR
+            </h2>
+            <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
+              NSC telah melahirkan produk bernama Akastar, diambil dari bahasa sansekerta Akasa (artinya ruang), dipadukan dengan "bintang" sebagai simbolisasi menyambutan teknologi maju ke pulau Indonesia. Nikmati "Internet Cepat Sampai Pelosok Negeri bersama kami!.{" "}
+              <a href="#" className="font-bold text-white underline decoration-white underline-offset-4 transition-opacity hover:opacity-70">
+                Pelajari selengkapnya di sini.
+              </a>
             </p>
-            <button className="px-8 py-3 bg-white text-black hover:bg-gray-200 font-bold uppercase tracking-widest rounded-sm transition-all duration-300">
-              Selengkapnya
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECTION 4: INTERNET YANG DIRANCANG UNTUK SETIAP KEBUTUHAN --- */}
+      <section className="relative h-screen w-full overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero3.webp"
+            alt="Internet untuk setiap kebutuhan"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/40 to-transparent"></div>
+        </div>
+
+        <div className="relative z-10 flex h-full flex-col justify-start px-8 pt-32 md:px-16 md:pt-40 lg:px-24">
+          <div className="max-w-xl text-left">
+            <h2 className="mb-6 text-3xl font-bold uppercase leading-tight tracking-tight text-white drop-shadow-md md:text-4xl">
+              Jangkauan
+            </h2>
+            <p className="mb-6 text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
+              Tersebar di seluruh wilayah Indonesia, kami hadir untuk memberikan solusi internet dengan kecepatan stabil tanpa gangguan hingga di pelosok negeri. Konektivitas yang kami berikan diharapkan dapat mendorong pertumbuhan ekonomi, memberikan kebebasan infrastruktur kepada seluruh masyarakat, sehingga setiap orang mendapat kesempatan yang sama untuk mendapat akses internet yang stabil.
+            </p>
+            <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
+              Periksa wilayah Anda{" "}
+              <a href="#" className="font-bold text-white underline decoration-white underline-offset-4 transition-opacity hover:opacity-70">
+                di sini.
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* --- WRAPPER SECTION 5 & 6 --- */}
+      <div className="relative w-full bg-black [clip-path:inset(0)]">
+        
+        {/* Particle Background Layer - FIXED & CLIPPED UNTUK KEDUA SECTION */}
+        <div className="fixed left-0 top-0 z-0 h-full w-full md:w-1/2 pointer-events-none">
+          <Image
+            src="/particle1.webp"
+            alt="Particle Effect"
+            fill
+            className="object-contain object-left"
+          />
+        </div>
+
+        {/* --- SECTION 5: ONLINE DALAM HITUNGAN MENIT --- */}
+        <section className="relative z-10 flex min-h-screen w-full items-center justify-center bg-transparent px-8 py-20 md:px-16 lg:px-24">
+          <div className="relative z-10 flex w-full max-w-7xl flex-col items-center justify-between gap-12 md:flex-row">
+            
+            <div className="relative flex flex-1 justify-center">
+              <div className="relative aspect-square w-full max-w-[600px]">
+                <Image
+                  src="/orbit.webp"
+                  alt="Starlink Setup"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="flex-1 text-left">
+              <h2 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight text-white md:text-5xl">
+                Leo Sat<br />Educational<br />Heading
+              </h2>
+              <p className="mb-12 text-base text-gray-200 md:text-lg">
+                Berdedikasi untuk memberikan konektivitas di seluruh wilayah Indonesia, kami memberikan edukasi yang mendalam tentang Orbit satelit. Ada dua kategori orbit yang perlu dipahami, mulai dari GEO (Geostationary Earth Orbit) dan LEO (Low Earth Orbit). Kedua kategori orbit satelit ini memiliki karakteristik serta kegunaan yang unik dan kegunaan yang berbeda. Namun persamaannya adalah keduanya memiliki peran yang penting dalam infrastruktur satelit global untuk dapat memenuhi berbagai kebutuhan komunikasi dan penelitian.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <button className="flex h-12 items-center justify-center rounded-md border border-gray-600 bg-transparent px-6 transition-colors hover:border-white">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-white">Selengkapnya</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* --- SECTION 6: PAKET LAYANAN FLEKSIBEL --- */}
+        <section className="relative z-10 flex min-h-screen w-full items-center justify-center bg-transparent px-8 py-20 md:px-16 lg:px-24">
+          <div className="relative z-10 flex w-full max-w-7xl flex-col items-center justify-between gap-12 md:flex-row">
+            
+            <div className="flex-1 text-left">
+              <h2 className="mb-8 text-3xl font-bold uppercase leading-tight tracking-tight text-white md:text-5xl lg:text-4xl">
+                Paket Layanan Fleksibel
+              </h2>
+              <p className="max-w-xl text-base leading-relaxed text-gray-300 md:text-lg">
+                NSC menawarkan paket layanan fleksibel di seluruh wilayah.
+              </p>
+            </div>
+
+            <div className="relative flex flex-1 justify-center">
+              <div className="relative aspect-video w-full max-w-[650px] md:aspect-square">
+                <Image
+                  src="/image2.webp"
+                  alt="Starlink Service"
+                  fill
+                  className="object-contain object-center md:object-right"
+                />
+              </div>
+            </div>
+
+          </div>
+        </section>
+        
+      </div>
+
+      {/* --- SECTION 7: DIRANCANG OLEH SPACEX --- */}
+      <section className="relative h-screen w-full overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero4.webp"
+            alt="Dirancang oleh SpaceX"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+        </div>
+
+        <div className="relative z-10 flex h-full flex-col justify-start pt-32 px-8 md:px-16 lg:px-24">
+          <div className="max-w-xl text-left">
+            <h2 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight text-white drop-shadow-md md:text-5xl">
+              Menggunakan teknologi VSAT
+            </h2>
+            <p className="mb-8 text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
+              kami menjadi salah satu penyedia internet berbasis satelit di Indonesia yang mampu menyediakan konektivitas yang handal dan cepat di daerah yang sulit dijangkau oleh infrastruktur.
+            </p>
+            <button className="border-[1.5px] border-white bg-transparent px-8 py-3 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
+              Pelajari Selengkapnya
             </button>
           </div>
         </div>
-
-        <div className="w-full md:w-1/2 h-[50vh] md:h-auto min-h-[500px] bg-transparent flex items-center justify-center p-8 md:p-16 relative">
-          <div className="relative w-full h-full min-h-[300px] flex items-center justify-center">
-            <img 
-              src="/orbit.webp" 
-              alt="Ilustrasi Orbit Satelit LEO dan GEO" 
-              className="relative z-10 w-full max-w-xl h-auto object-contain drop-shadow-2xl"
-            />
-          </div>
-        </div>
       </section>
 
-      {/* =========================================
-          7. VISI & MISI / KESEMPATAN
-      ========================================= */}
-      <section className="relative w-full h-[60vh] flex items-center justify-end px-6 md:px-24 bg-black overflow-hidden">
-
-        <div className="relative z-10 max-w-4xl text-right">
-          <p className="text-white text-xl md:text-2xl leading-relaxed mb-8 font-light">
-            "Tersebar di seluruh wilayah Indonesia, kami hadir untuk memberikan solusi internet dengan kecepatan stabil tanpa gangguan hingga di pelosok negeri. Konektivitas yang kami berikan diharapkan dapat mendorong pertumbuhan ekonomi, memberikan kebebasan infrastruktur kepada seluruh masyarakat, sehingga setiap orang mendapat <span className="font-bold text-nsc-orange">kesempatan yang sama</span> untuk mendapat akses internet yang stabil."
-          </p>
-          <button className="px-8 py-3 bg-white text-black hover:bg-gray-200 font-bold uppercase tracking-widest rounded-sm transition-all duration-300 text-sm">
-            Selengkapnya
-          </button>
-        </div>
-      </section>
-
-      {/* =========================================
-          8. FAQ
-      ========================================= */}
-      <section className="w-full py-32 flex flex-col items-center justify-center bg-transparent">
-        <h2 className="text-4xl md:text-5xl font-bold uppercase mb-16 text-center">Pertanyaan yang <br/> Sering Diajukan</h2>
+      {/* --- SECTION 8: UJI COBA 30 HARI (CENTERED FORM + FIXED BG KANAN) --- */}
+      <div className="relative w-full bg-black [clip-path:inset(0)]">
         
-        <div className="w-full max-w-3xl px-6">
-          <div className="border-b border-white/20 py-6 flex justify-between items-center cursor-pointer hover:text-nsc-orange transition-colors">
-            <h3 className="text-xl font-bold">Apakah Akastar bisa menjangkau daerah pegunungan?</h3>
-            <span className="text-2xl">+</span>
-          </div>
-          <div className="border-b border-white/20 py-6 flex justify-between items-center cursor-pointer hover:text-nsc-orange transition-colors">
-            <h3 className="text-xl font-bold">Bagaimana cara pemasangan perangkat Akastar?</h3>
-            <span className="text-2xl">+</span>
-          </div>
+        <div className="fixed right-0 top-0 z-0 h-full w-full md:w-1/2 pointer-events-none">
+          <Image
+            src="/particle2.webp"
+            alt="Particle Effect 2"
+            fill
+            className="object-contain object-right"
+          />
         </div>
-      </section>
 
+        <section className="relative z-10 flex min-h-[90vh] w-full flex-col items-center justify-center bg-transparent px-8 py-24 text-center md:px-16 lg:px-24">
+          <div className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center">
+            
+            <h2 className="mb-4 text-4xl font-bold uppercase leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+              UJI COBA 30 HARI
+            </h2>
+            <p className="mb-12 max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg">
+              Jika tidak puas, Anda dapat mengembalikan NSC untuk mendapatkan pengembalian dana penuh.
+            </p>
+
+            <div className="flex w-full max-w-2xl flex-col gap-2 text-left">
+              <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                ALAMAT LAYANAN
+              </label>
+              
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <div className="relative flex-1">
+                  <input 
+                    type="text" 
+                    placeholder="KETIK DAN PILIH"
+                    className="w-full border border-gray-600 bg-black/60 px-4 py-4 text-sm text-white outline-none transition-colors focus:border-white placeholder:text-gray-500 uppercase"
+                  />
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                      <circle cx="12" cy="12" r="6" strokeDasharray="2 2" />
+                    </svg>
+                  </div>
+                </div>
+
+                <button className="w-full bg-white px-10 py-4 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200 sm:w-auto min-w-[140px]">
+                  MULAI
+                </button>
+              </div>
+
+              <div className="mt-8 flex w-full justify-center">
+                <button className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.1em] text-white transition-opacity hover:opacity-70">
+                  <span className="border-b border-transparent pb-0.5 group-hover:border-white transition-all duration-300">
+                    LIHAT PETA KETERSEDIAAN & KECEPATAN
+                  </span>
+                  <svg className="h-3 w-3 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+    <Footer />
     </main>
   );
 }

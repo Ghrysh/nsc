@@ -1,11 +1,2 @@
 @import "tailwindcss";
-
-@theme {
-  --color-nsc-navy: #0B192C;
-  --color-nsc-orange: #F5821F;
-}
-
-body {
-  background-color: #050505;
-  color: #ffffff;
-}
+@source "../components";
