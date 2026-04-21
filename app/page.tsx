@@ -6,7 +6,7 @@ export default function Home() {
     <main className="w-full bg-black">
       
       {/* --- SECTION 1: HERO --- */}
-      <section className="relative flex min-h-screen w-full flex-col items-center justify-between overflow-hidden pt-32 pb-12">
+      <section className="z-0 relative flex min-h-screen w-full flex-col items-center justify-between overflow-hidden pt-32 pb-12">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.webp" 
@@ -165,7 +165,6 @@ export default function Home() {
       {/* --- WRAPPER SECTION 5 & 6 --- */}
       <div className="relative w-full bg-black [clip-path:inset(0)]">
         
-        {/* Particle Background Layer - FIXED & CLIPPED UNTUK KEDUA SECTION */}
         <div className="fixed left-0 top-0 z-0 h-full w-full md:w-1/2 pointer-events-none">
           <Image
             src="/particle1.webp"

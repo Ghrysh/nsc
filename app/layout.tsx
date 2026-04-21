@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { VercelToolbar } from '@vercel/toolbar/next';
 
 export const metadata = {
   title: "Starlink",
@@ -16,6 +17,8 @@ export default function RootLayout({
       <body className="bg-black text-white antialiased" suppressHydrationWarning>
         <Navbar />
         {children}
+
+        <VercelToolbar />
       </body>
     </html>
   );
