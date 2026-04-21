@@ -40,7 +40,7 @@ export default function Bisnis() {
             <p className="mb-8 text-[13px] font-bold text-white">Mulai Rp647.000/bln untuk layanan</p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-white px-8 py-3 text-[11px] font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">MULAI</button>
-              <button className="border border-white bg-transparent px-8 py-3 text-[11px] font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">DETAIL LAYANAN</button>
+              <a href="/service-plans" className="border border-white bg-transparent px-8 py-3 text-[11px] font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">DETAIL LAYANAN</a>
             </div>
           </div>
 
@@ -50,13 +50,12 @@ export default function Bisnis() {
             <p className="mb-8 text-[13px] font-bold text-white">Mulai Rp4.477.000/bln untuk layanan</p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-white px-8 py-3 text-[11px] font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">MULAI</button>
-              <button className="border border-white bg-transparent px-8 py-3 text-[11px] font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">DETAIL LAYANAN</button>
+              <a href="/service-plans" className="border border-white bg-transparent px-8 py-3 text-[11px] font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">DETAIL LAYANAN</a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* --- SECTION PANJANG: KASUS PENGGUNAAN HINGGA FITUR --- */}
       <div className="relative w-full bg-black [clip-path:inset(0)]">
 
         <div className="fixed left-0 top-0 z-0 h-full w-full md:w-1/2 pointer-events-none">
@@ -71,7 +70,6 @@ export default function Bisnis() {
 
         <section className="relative z-10 mx-auto flex w-full max-w-7xl flex-col bg-transparent px-8 py-20 md:px-16 lg:px-12">
 
-          {/* 1. BAGIAN KASUS PENGGUNAAN (GRID 4 GAMBAR) */}
           <div className="mb-6">
             <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white">
               KASUS PENGGUNAAN
@@ -79,7 +77,6 @@ export default function Bisnis() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {/* Lokasi Tetap */}
             <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-900 group">
               <Image src="/lokasi-tetap.webp" alt="Lokasi Tetap" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent p-6 md:p-8">
@@ -88,7 +85,6 @@ export default function Bisnis() {
               </div>
             </div>
 
-            {/* Mobile Darat (Grayscale) */}
             <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-900 grayscale group">
               <Image src="/mobile-darat.webp" alt="Mobile Darat" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent p-6 md:p-8">
@@ -97,7 +93,6 @@ export default function Bisnis() {
               </div>
             </div>
 
-            {/* Maritim */}
             <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-900 group">
               <Image src="/maritim.webp" alt="Maritim" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent p-6 md:p-8">
@@ -106,7 +101,6 @@ export default function Bisnis() {
               </div>
             </div>
 
-            {/* Aviasi */}
             <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-900 group">
               <Image src="/aviasi.webp" alt="Aviasi" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent p-6 md:p-8">
@@ -116,7 +110,6 @@ export default function Bisnis() {
             </div>
           </div>
 
-          {/* 2. BAGIAN HEADLINE BESAR TENGAH */}
           <div className="mt-40 flex flex-col items-center text-center">
             <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight text-white md:text-4xl lg:text-5xl">
               BUAT BISNIS ANDA TETAP TERHUBUNG
@@ -126,7 +119,6 @@ export default function Bisnis() {
             </p>
           </div>
 
-          {/* 3. BAGIAN ONLINE DENGAN MUDAH */}
           <div className="mt-32 flex flex-col items-center gap-12 md:flex-row lg:gap-24">
             <div className="flex-1 text-left">
               <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight text-white md:text-4xl">
@@ -164,12 +156,9 @@ export default function Bisnis() {
             </div>
           </div>
 
-          {/* 4. BAGIAN FITUR */}
           <div className="mt-32 flex flex-col gap-12 md:flex-row lg:gap-24">
 
-            {/* Kolom Kiri: Alokasi Kuota */}
             <div className="flex-1 text-left">
-              {/* Icon 3 Layers */}
               <svg className="mb-6 h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
               </svg>
@@ -181,9 +170,7 @@ export default function Bisnis() {
               </p>
             </div>
 
-            {/* Kolom Kanan: Layanan 24/7 */}
             <div className="flex-1 text-left">
-              {/* Icon Clock 24/7 */}
               <svg className="mb-6 h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -200,10 +187,8 @@ export default function Bisnis() {
         </section>
       </div>
 
-      {/* --- SECTION AKSES JARINGAN DI LAUT --- */}
       <section className="relative flex min-h-[80vh] w-full items-center justify-end px-8 py-24 md:px-16 lg:px-24">
 
-        {/* Background Image */}
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/sunset.webp"
@@ -229,10 +214,8 @@ export default function Bisnis() {
 
       </section>
 
-      {/* --- SECTION DIRANCANG OLEH SPACEX --- */}
       <section className="relative flex min-h-[90vh] w-full items-start justify-start px-8 py-32 md:px-16 lg:px-24">
 
-        {/* Background Image */}
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/space.webp"
@@ -257,7 +240,6 @@ export default function Bisnis() {
         </div>
       </section>
 
-      {/* --- SECTION 8: UJI COBA 30 HARI --- */}
       <div className="relative w-full bg-black [clip-path:inset(0)]">
 
         <div className="fixed right-0 top-0 z-0 h-full w-full md:w-1/2 pointer-events-none">

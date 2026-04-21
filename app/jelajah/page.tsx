@@ -1,16 +1,88 @@
+"use client";
+
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import { useRef, useState } from "react";
 
 export default function Jelajah() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => setIsDragging(false);
+  const handleMouseUp = () => setIsDragging(false);
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      const maxScroll = scrollWidth - clientWidth;
+      if (maxScroll <= 0) return;
+      const scrollPercentage = scrollLeft / maxScroll;
+      const newIndex = Math.round(scrollPercentage * 3);
+      if (newIndex !== activeIndex) setActiveIndex(newIndex);
+    }
+  };
+
+  const scrollTo = (index: number) => {
+    if (scrollRef.current) {
+      const { scrollWidth, clientWidth } = scrollRef.current;
+      const maxScroll = scrollWidth - clientWidth;
+      const targetLeft = (maxScroll / 3) * index;
+      scrollRef.current.scrollTo({ left: targetLeft, behavior: "auto" });
+      setActiveIndex(index);
+    }
+  };
+
+  const scrollRef2 = useRef<HTMLDivElement>(null);
+  const [isDragging2, setIsDragging2] = useState(false);
+  const [startX2, setStartX2] = useState(0);
+  const [scrollLeft2, setScrollLeft2] = useState(0);
+
+  const handleMouseDown2 = (e: React.MouseEvent) => {
+    if (!scrollRef2.current) return;
+    setIsDragging2(true);
+    setStartX2(e.pageX - scrollRef2.current.offsetLeft);
+    setScrollLeft2(scrollRef2.current.scrollLeft);
+  };
+
+  const handleMouseLeave2 = () => setIsDragging2(false);
+  const handleMouseUp2 = () => setIsDragging2(false);
+
+  const handleMouseMove2 = (e: React.MouseEvent) => {
+    if (!isDragging2 || !scrollRef2.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef2.current.offsetLeft;
+    const walk = (x - startX2) * 2;
+    scrollRef2.current.scrollLeft = scrollLeft2 - walk;
+  };
+
   return (
     <main className="w-full bg-black">
-      
+
       {/* --- HERO SECTION JELAJAH --- */}
       <section className="relative flex min-h-screen w-full flex-col items-center justify-center pb-20">
-        
+
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
-            src="/hero-jelajah.webp" 
+            src="/hero-jelajah.webp"
             alt="Menjelajah Bersama Starlink"
             fill
             sizes="100vw"
@@ -45,7 +117,7 @@ export default function Jelajah() {
 
       {/* --- WRAPPER SECTION 2 --- */}
       <div className="relative w-full bg-black [clip-path:inset(0)]">
-        
+
         <div className="fixed left-0 top-0 z-0 h-full w-full opacity-40 pointer-events-none">
           <Image
             src="/particle2.webp"
@@ -57,7 +129,7 @@ export default function Jelajah() {
         </div>
 
         <div className="relative z-10 flex w-full flex-col items-center justify-center px-6 py-24 md:px-12 lg:px-24">
-          
+
           <h2 className="mb-12 text-center text-3xl font-bold uppercase tracking-tight text-white md:text-4xl">
             INTERNET BERKECEPATAN TINGGI SAAT BEPERGIAN
           </h2>
@@ -67,12 +139,12 @@ export default function Jelajah() {
             <p className="mb-8 text-[13px] leading-relaxed text-gray-300">
               Dirancang untuk wisatawan yang sering bepergian, pengguna RV, karavan, dan bekerja saat singgah.
             </p>
-            
+
             <div className="mb-4 flex items-baseline justify-center gap-1">
               <span className="text-4xl font-bold text-white md:text-[42px] tracking-tight">RP1.639.000</span>
               <span className="text-sm text-gray-400">/ BLN</span>
             </div>
-            
+
             <div className="w-full border-t border-gray-700 pt-6">
               <p className="text-[13px] text-gray-400">Kuota Jelajah Tanpa Batas</p>
             </div>
@@ -102,47 +174,97 @@ export default function Jelajah() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <button className="rounded-sm border border-gray-400 bg-transparent px-8 py-3 text-[10px] font-bold uppercase tracking-widest text-white transition-colors hover:border-white hover:bg-white hover:text-black">
+            <a href="/service-plans" className="rounded-sm border border-gray-400 bg-transparent px-8 py-3 text-[10px] font-bold uppercase tracking-widest text-white transition-colors hover:border-white hover:bg-white hover:text-black">
               LIHAT SEMUA PAKET
-            </button>
+            </a>
             <button className="rounded-sm bg-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
               MULAI
             </button>
           </div>
 
-          <div className="mt-32 w-full max-w-6xl">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              <div className="flex flex-col">
-                <div className="relative aspect-video w-full mb-6">
-                  <Image src="/salju.webp" alt="Perjalanan" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
-                </div>
-                <h4 className="mb-3 text-[17px] uppercase tracking-wide text-white font-normal">PERJALANAN</h4>
-                <p className="text-[13px] leading-relaxed text-gray-300">
-                  Bawa internet Anda saat bepergian ke mana saja di 150+ negara, wilayah, dan pasar lainnya di seluruh benua.
-                </p>
+          {/* SECTION SLIDER */}
+          <div className="relative z-10 flex w-full flex-col items-center justify-center bg-black pt-10 pb-24 md:px-12 lg:px-24">
+
+            <div className="relative mt-16 w-full max-w-[1400px] group">
+
+              <button
+                onClick={() => {
+                  if (scrollRef.current) scrollRef.current.scrollBy({ left: -400, behavior: "smooth" });
+                }}
+                className="absolute left-4 top-[40%] z-20 -translate-y-1/2 text-white/50 opacity-0 transition-all duration-300 hover:text-white group-hover:opacity-100 hidden md:block"
+              >
+                <svg className="h-8 w-8 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              <div
+                ref={scrollRef}
+                onScroll={handleScroll}
+                onMouseDown={handleMouseDown}
+                onMouseLeave={handleMouseLeave}
+                onMouseUp={handleMouseUp}
+                onMouseMove={handleMouseMove}
+                className={`flex w-full gap-6 overflow-x-auto px-4 pb-10 md:gap-8 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] ${isDragging ? "cursor-grabbing" : "cursor-grab snap-x snap-mandatory"
+                  }`}
+                style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}
+              >
+                {[
+                  {
+                    id: 1,
+                    title: "PERJALANAN",
+                    img: "/salju.webp",
+                    desc: "Bawa internet Anda saat bepergian ke mana saja di 150+ negara, wilayah, dan pasar lainnya di seluruh benua."
+                  },
+                  {
+                    id: 2,
+                    title: "BERKEMAH",
+                    img: "/kemah.webp",
+                    desc: "Gunakan internet berkecepatan tinggi saat berkemah di wilayah paling terpencil di seluruh benua."
+                  },
+                  {
+                    id: 3,
+                    title: "BERLAYAR",
+                    img: "/berlayar.webp",
+                    desc: "Terhubung di perairan teritorial dan jalur perairan di benua, dengan jangkauan opsional di lautan terbuka. *Di Indonesia, Layanan ini hanya tersedia di Paket Maritim."
+                  }
+                ].map((card) => (
+                  <div key={card.id} className="flex min-w-[85vw] flex-col snap-start md:min-w-[380px] lg:min-w-[420px] flex-1 select-none">
+                    <div className="relative mb-6 aspect-video w-full overflow-hidden bg-[#111111] pointer-events-none">
+                      <Image src={card.img} alt={card.title} fill className="object-cover" />
+                    </div>
+                    <h4 className="mb-4 text-[17px] uppercase tracking-wide text-white font-normal">{card.title}</h4>
+                    <p className="text-[14px] leading-relaxed text-gray-300 pr-4">{card.desc}</p>
+                  </div>
+                ))}
               </div>
-              <div className="flex flex-col">
-                <div className="relative aspect-video w-full mb-6">
-                  <Image src="/kemah.webp" alt="Berkemah" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
-                </div>
-                <h4 className="mb-3 text-[17px] uppercase tracking-wide text-white font-normal">BERKEMAH</h4>
-                <p className="text-[13px] leading-relaxed text-gray-300">
-                  Gunakan internet berkecepatan tinggi saat berkemah di wilayah paling terpencil di seluruh benua.
-                </p>
-              </div>
-              <div className="flex flex-col">
-                <div className="relative aspect-video w-full mb-6">
-                  <Image src="/berlayar.webp" alt="Berlayar" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
-                </div>
-                <h4 className="mb-3 text-[17px] uppercase tracking-wide text-white font-normal">BERLAYAR</h4>
-                <p className="text-[13px] leading-relaxed text-gray-300">
-                  Terhubung di perairan teritorial dan jalur perairan di benua, dengan jangkauan opsional di lautan terbuka. *Di Indonesia, Layanan ini hanya tersedia di Paket Maritim.
-                </p>
-              </div>
+
+              <button
+                onClick={() => {
+                  if (scrollRef.current) scrollRef.current.scrollBy({ left: 400, behavior: "smooth" });
+                }}
+                className="absolute right-4 top-[40%] z-20 -translate-y-1/2 text-white/50 opacity-0 transition-all duration-300 hover:text-white group-hover:opacity-100 hidden md:block"
+              >
+                <svg className="h-8 w-8 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
             </div>
-            <div className="mt-16 w-full max-w-[200px] h-[3px] bg-gray-800 rounded-full mx-0">
-              <div className="w-1/3 h-full bg-gray-400 rounded-full"></div>
+
+            <div className="mt-8 flex w-full max-w-[1400px] items-center gap-2 px-4 md:px-0">
+              {[0, 1, 2].map((index) => (
+                <button
+                  key={index}
+                  onClick={() => scrollTo(index)}
+                  className={`h-1.5 rounded-full ${activeIndex === index
+                      ? "w-full max-w-[280px] bg-[#888888]"
+                      : "w-1.5 bg-[#333333]"
+                    }`}
+                />
+              ))}
             </div>
+
           </div>
 
           <div className="mt-40 mb-10 flex w-full flex-col items-center text-center">
@@ -151,9 +273,9 @@ export default function Jelajah() {
             </h2>
             <p className="mb-10 text-lg text-white">Daftar di bawah ini</p>
             <div className="flex w-full max-w-lg flex-col gap-4 sm:flex-row sm:gap-2">
-              <input 
-                type="email" 
-                placeholder="EMAIL" 
+              <input
+                type="email"
+                placeholder="EMAIL"
                 className="w-full flex-1 rounded-sm border border-gray-600 bg-transparent px-4 py-3 text-xs text-white outline-none focus:border-white placeholder:text-gray-400 uppercase"
               />
               <button className="w-full rounded-sm bg-[#222222] px-8 py-3 text-[10px] font-bold uppercase tracking-widest text-gray-400 transition-colors hover:bg-gray-800 hover:text-white sm:w-auto">
@@ -196,12 +318,12 @@ export default function Jelajah() {
         {/* --- SECTION 3 --- */}
         <section className="relative flex h-[90vh] min-h-[600px] w-full items-start justify-start overflow-hidden pt-25">
           <div className="absolute inset-0 z-0 h-full w-full">
-            <Image 
-              src="/starlink-mini.webp" 
-              alt="Starlink Mini" 
-              fill 
+            <Image
+              src="/starlink-mini.webp"
+              alt="Starlink Mini"
+              fill
               sizes="100vw"
-              className="object-cover object-center" 
+              className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent w-full md:w-2/3"></div>
           </div>
@@ -229,12 +351,12 @@ export default function Jelajah() {
         {/* --- SECTION 4 --- */}
         <section className="relative flex min-h-[90vh] w-full items-start justify-end overflow-hidden px-8 py-24 md:px-16 lg:px-24">
           <div className="absolute inset-0 z-0 h-full w-full">
-            <Image 
-              src="/malam.webp" 
-              alt="Bekerja dan Bermain di Lokasi Terpencil" 
-              fill 
+            <Image
+              src="/malam.webp"
+              alt="Bekerja dan Bermain di Lokasi Terpencil"
+              fill
               sizes="100vw"
-              className="object-cover object-center" 
+              className="object-cover object-center"
             />
             <div className="absolute inset-0 right-0 ml-auto w-full bg-gradient-to-l from-black/90 via-black/40 to-transparent md:w-3/4"></div>
           </div>
@@ -355,12 +477,12 @@ export default function Jelajah() {
         {/* --- SECTION 7 --- */}
         <section className="relative flex min-h-[80vh] w-full items-start justify-start overflow-hidden">
           <div className="absolute inset-0 z-0 h-full w-full">
-            <Image 
-              src="/tahan-cuaca.webp" 
-              alt="Starlink Tahan Cuaca" 
-              fill 
+            <Image
+              src="/tahan-cuaca.webp"
+              alt="Starlink Tahan Cuaca"
+              fill
               sizes="100vw"
-              className="object-cover object-center" 
+              className="object-cover object-center"
             />
             <div className="absolute inset-0 left-0 w-full bg-gradient-to-r from-black/80 via-black/40 to-transparent md:w-2/3"></div>
           </div>
@@ -441,8 +563,6 @@ export default function Jelajah() {
             </button>
           </section>
         </div>
-
-      {/* Akhir dari MEGA WRAPPER Sticky Navbar */}
       </div>
 
       <Footer />

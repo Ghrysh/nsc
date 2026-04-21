@@ -9,9 +9,18 @@ export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const pathname = usePathname();
-  const isBisnis = pathname === "/bisnis";
+
+  const bisnisPaths = ["/bisnis", "/lokasi-tetap", "/maritim", "/aviasi", "/mobile"];
+  const isBisnis = bisnisPaths.includes(pathname);
+
   const isHome = pathname === "/";
+  const isResidential = pathname === "/residential";
   const isJelajah = pathname === "/jelajah";
+  
+  const isLokasiTetap = pathname === "/lokasi-tetap";
+  const isMaritim = pathname === "/maritim";
+  const isAviasi = pathname === "/aviasi";
+  const isMobile = pathname === "/mobile";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +45,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* --- BANNER PROMO (Hanya Muncul di Halaman Home saat di-scroll) --- */}
       {isHome && (
         <div
           className={`fixed left-0 top-0 z-[60] flex h-[46px] w-full items-center justify-center bg-white px-4 transition-transform duration-500 ease-in-out ${
@@ -65,23 +73,23 @@ export default function Navbar() {
             {/* LOGIKA MENU KIRI DINAMIS & UNDERLINE AKTIF */}
             {isBisnis ? (
               <>
-                <Link href="#" className="text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">
+                <Link href="/lokasi-tetap" className={`text-[11px] font-bold uppercase tracking-[0.2em] ${isLokasiTetap ? "text-white border-b-2 border-white pb-0.5" : "text-white transition-opacity hover:opacity-70"}`}>
                   Lokasi Tetap
                 </Link>
-                <Link href="#" className="text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">
+                <Link href="/maritim" className={`text-[11px] font-bold uppercase tracking-[0.2em] ${isMaritim ? "text-white border-b-2 border-white pb-0.5" : "text-white transition-opacity hover:opacity-70"}`}>
                   Maritim
                 </Link>
-                <Link href="#" className="text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">
+                <Link href="/aviasi" className={`text-[11px] font-bold uppercase tracking-[0.2em] ${isAviasi ? "text-white border-b-2 border-white pb-0.5" : "text-white transition-opacity hover:opacity-70"}`}>
                   Aviasi
                 </Link>
-                <Link href="#" className="text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">
+                <Link href="/mobile" className={`text-[11px] font-bold uppercase tracking-[0.2em] ${isMobile ? "text-white border-b-2 border-white pb-0.5" : "text-white transition-opacity hover:opacity-70"}`}>
                   Mobile
                 </Link>
               </>
             ) : (
               <>
-                <Link href="/" className={`text-[11px] font-bold uppercase tracking-[0.2em] ${isHome ? "text-white border-b-2 border-white pb-0.5" : "text-white transition-opacity hover:opacity-70"}`}>
-                  Residensial
+                <Link href="/residential" className={`text-[11px] font-bold uppercase tracking-[0.2em] ${isResidential ? "text-white border-b-2 border-white pb-0.5" : "text-white transition-opacity hover:opacity-70"}`}>
+                  Residential
                 </Link>
                 <Link href="/jelajah" className={`text-[11px] font-bold uppercase tracking-[0.2em] ${isJelajah ? "text-white border-b-2 border-white pb-0.5" : "text-white transition-opacity hover:opacity-70"}`}>
                   Jelajah
@@ -118,7 +126,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* OVERLAY GELAP UNTUK SIDEBAR */}
       <div 
         className={`fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
           isSidebarOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -126,7 +133,6 @@ export default function Navbar() {
         onClick={() => setIsSidebarOpen(false)}
       ></div>
 
-      {/* SIDEBAR MENU MOBILE */}
       <div
         className={`fixed right-0 top-0 z-50 h-screen w-full bg-black p-8 text-white transition-transform duration-500 ease-in-out sm:w-[300px] ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
@@ -145,7 +151,6 @@ export default function Navbar() {
 
         <div className="flex flex-col">
           
-          {/* MENU PERSONAL / BISNIS */}
           <div className="flex items-center gap-4 border-b border-gray-800 pb-6 mb-6">
             <Link 
               href="/" 
@@ -164,18 +169,17 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* MENU HALAMAN DINAMIS */}
           <div className="flex flex-col gap-6 border-b border-gray-800 pb-6 mb-6">
             {isBisnis ? (
               <>
-                <Link href="#" className="text-[16px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">Lokasi Tetap</Link>
-                <Link href="#" className="text-[16px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">Maritim</Link>
-                <Link href="#" className="text-[16px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">Aviasi</Link>
-                <Link href="#" className="text-[16px] font-bold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70">Mobile</Link>
+                <Link href="/lokasi-tetap" onClick={() => setIsSidebarOpen(false)} className={`text-[16px] font-bold uppercase tracking-[0.2em] ${isLokasiTetap ? "text-white border-b-2 border-white pb-0.5 w-max" : "text-white transition-opacity hover:opacity-70"}`}>Lokasi Tetap</Link>
+                <Link href="/maritim" onClick={() => setIsSidebarOpen(false)} className={`text-[16px] font-bold uppercase tracking-[0.2em] ${isMaritim ? "text-white border-b-2 border-white pb-0.5 w-max" : "text-white transition-opacity hover:opacity-70"}`}>Maritim</Link>
+                <Link href="/aviasi" onClick={() => setIsSidebarOpen(false)} className={`text-[16px] font-bold uppercase tracking-[0.2em] ${isAviasi ? "text-white border-b-2 border-white pb-0.5 w-max" : "text-white transition-opacity hover:opacity-70"}`}>Aviasi</Link>
+                <Link href="/mobile" onClick={() => setIsSidebarOpen(false)} className={`text-[16px] font-bold uppercase tracking-[0.2em] ${isMobile ? "text-white border-b-2 border-white pb-0.5 w-max" : "text-white transition-opacity hover:opacity-70"}`}>Mobile</Link>
               </>
             ) : (
               <>
-                <Link href="/" onClick={() => setIsSidebarOpen(false)} className={`text-[16px] font-bold uppercase tracking-[0.2em] ${isHome ? "text-white border-b-2 border-white pb-0.5 w-max" : "text-white transition-opacity hover:opacity-70"}`}>Residensial</Link>
+                <Link href="/residential" onClick={() => setIsSidebarOpen(false)} className={`text-[16px] font-bold uppercase tracking-[0.2em] ${isResidential ? "text-white border-b-2 border-white pb-0.5 w-max" : "text-white transition-opacity hover:opacity-70"}`}>Residential</Link>
                 <Link href="/jelajah" onClick={() => setIsSidebarOpen(false)} className={`text-[16px] font-bold uppercase tracking-[0.2em] ${isJelajah ? "text-white border-b-2 border-white pb-0.5 w-max" : "text-white transition-opacity hover:opacity-70"}`}>Jelajah</Link>
               </>
             )}
