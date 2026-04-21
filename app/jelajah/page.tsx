@@ -83,7 +83,7 @@ export default function Jelajah() {
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/hero-jelajah.webp"
-            alt="Menjelajah Bersama Starlink"
+            alt="Menjelajah Bersama NSC"
             fill
             sizes="100vw"
             className="object-cover object-center"
@@ -95,7 +95,7 @@ export default function Jelajah() {
 
         <div className="relative z-10 flex w-full flex-col items-center px-4 text-center mt-10">
           <h1 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-            MENJELAJAH BERSAMA<br />STARLINK
+            MENJELAJAH BERSAMA<br />NSC
           </h1>
           <div className="mb-8 text-base font-bold text-white drop-shadow-md md:text-lg leading-relaxed">
             <p>
@@ -105,7 +105,7 @@ export default function Jelajah() {
           </div>
           <div className="mb-10 text-sm font-medium text-white drop-shadow-md md:text-[15px] leading-relaxed">
             <p>
-              Pesan sebelum 23/4 | starlinkindonesia@spacex.com | 007 803 6 219 919 (Telepon)<br />
+              Pesan sebelum 23/4 | NSCindonesia@spacex.com | 007 803 6 219 919 (Telepon)<br />
               +62 823 1001 0006 (WhatsApp)
             </p>
           </div>
@@ -269,7 +269,7 @@ export default function Jelajah() {
 
           <div className="mt-40 mb-10 flex w-full flex-col items-center text-center">
             <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight text-white md:text-5xl">
-              TERIMA PEMBARUAN EMAIL STARLINK
+              TERIMA PEMBARUAN EMAIL NSC
             </h2>
             <p className="mb-10 text-lg text-white">Daftar di bawah ini</p>
             <div className="flex w-full max-w-lg flex-col gap-4 sm:flex-row sm:gap-2">
@@ -319,8 +319,8 @@ export default function Jelajah() {
         <section className="relative flex h-[90vh] min-h-[600px] w-full items-start justify-start overflow-hidden pt-25">
           <div className="absolute inset-0 z-0 h-full w-full">
             <Image
-              src="/starlink-mini.webp"
-              alt="Starlink Mini"
+              src="/NSC-mini.webp"
+              alt="NSC Mini"
               fill
               sizes="100vw"
               className="object-cover object-center"
@@ -329,10 +329,10 @@ export default function Jelajah() {
           </div>
           <div className="relative z-10 flex w-full max-w-2xl flex-col items-start px-8 text-left md:px-16 lg:px-24">
             <h2 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight text-white drop-shadow-md md:text-5xl lg:text-[42px]">
-              STARLINK MINI UNTUK<br />INTERNET SAAT SINGGAH
+              NSC MINI UNTUK<br />INTERNET SAAT SINGGAH
             </h2>
             <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-              Starlink Mini adalah kit portabel yang ringkas dan dapat dengan mudah dimasukkan ke dalam ransel, dirancang untuk menyediakan internet berkecepatan tinggi dan latensi rendah saat singgah.
+              NSC Mini adalah kit portabel yang ringkas dan dapat dengan mudah dimasukkan ke dalam ransel, dirancang untuk menyediakan internet berkecepatan tinggi dan latensi rendah saat singgah.
             </p>
             <p className="mb-10 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
               Kit mencakup router Wi-Fi bawaan, konsumsi daya yang lebih rendah, input daya DC, dan <span className="font-bold text-white">kecepatan unduhan maksimal lebih dari 200 Mbps.</span>
@@ -365,10 +365,10 @@ export default function Jelajah() {
               BEKERJA DAN BERMAIN DI<br />LOKASI TERPENCIL
             </h2>
             <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-              Starlink menawarkan internet berkecepatan tinggi hampir di semua tempat di seluruh benua. Dengan Jelajah, Anda dapat bepergian ke mana saja di negara Anda dan pada perjalanan internasional di 150+ negara, wilayah, dan pasar lain di seluruh benua.
+              NSC menawarkan internet berkecepatan tinggi hampir di semua tempat di seluruh benua. Dengan Jelajah, Anda dapat bepergian ke mana saja di negara Anda dan pada perjalanan internasional di 150+ negara, wilayah, dan pasar lain di seluruh benua.
             </p>
             <p className="text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-              Starlink terhubung dalam hitungan menit dan dapat dikemas dengan cepat saat Anda harus berpindah ke tujuan berikutnya.
+              NSC terhubung dalam hitungan menit dan dapat dikemas dengan cepat saat Anda harus berpindah ke tujuan berikutnya.
             </p>
           </div>
         </section>
@@ -398,7 +398,7 @@ export default function Jelajah() {
             <div className="relative h-[50vh] w-full md:h-auto md:flex-1">
               <Image
                 src="/perahu.webp"
-                alt="Starlink di Perairan"
+                alt="NSC di Perairan"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -407,13 +407,13 @@ export default function Jelajah() {
             <div className="flex flex-1 flex-col justify-center bg-transparent px-8 py-16 md:px-16 lg:px-24">
               <div className="max-w-lg text-left">
                 <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight text-white md:text-4xl lg:text-5xl">
-                  STARLINK DI PERAIRAN
+                  NSC DI PERAIRAN
                 </h2>
                 <p className="mb-6 text-sm leading-relaxed text-gray-300 md:text-[15px]">
-                  Tetap terhubung dengan Internet berkecepatan tinggi di kapal Anda menggunakan paket Starlink Jelajah di perairan pesisir dan di benua. Untuk jangkauan di perairan internasional, aktifkan Mode Laut.
+                  Tetap terhubung dengan Internet berkecepatan tinggi di kapal Anda menggunakan paket NSC Jelajah di perairan pesisir dan di benua. Untuk jangkauan di perairan internasional, aktifkan Mode Laut.
                 </p>
                 <p className="mb-10 text-sm leading-relaxed text-gray-300 md:text-[15px]">
-                  Untuk perjalanan laut yang sering dilakukan atau berlangsung dalam jangka waktu lama, pelajari tentang Starlink Maritim.
+                  Untuk perjalanan laut yang sering dilakukan atau berlangsung dalam jangka waktu lama, pelajari tentang NSC Maritim.
                 </p>
                 <button className="rounded-sm border border-white bg-transparent px-8 py-3 text-[10px] font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
                   LIHAT MARITIM
@@ -429,7 +429,7 @@ export default function Jelajah() {
                   ONLINE DALAM HITUNGAN MENIT
                 </h2>
                 <p className="mb-10 text-sm leading-relaxed text-gray-300 md:text-[15px]">
-                  Atur Starlink hanya dengan dua langkah. Petunjuk dapat dijalankan dari urutan mana saja:
+                  Atur NSC hanya dengan dua langkah. Petunjuk dapat dijalankan dari urutan mana saja:
                 </p>
                 <div className="mb-12 flex flex-col gap-4">
                   <p className="text-xl font-bold uppercase tracking-widest text-white md:text-[22px]">
@@ -440,7 +440,7 @@ export default function Jelajah() {
                   </p>
                 </div>
                 <p className="mb-8 text-sm leading-relaxed text-gray-300 md:text-[15px]">
-                  Posisi Starlink harus bebas halangan dan mengarah langsung ke langit. Unduh aplikasi Starlink untuk menentukan lokasi pemasangan terbaik Anda.
+                  Posisi NSC harus bebas halangan dan mengarah langsung ke langit. Unduh aplikasi NSC untuk menentukan lokasi pemasangan terbaik Anda.
                 </p>
                 <div className="flex flex-wrap items-center gap-6">
                   <button className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.1em] text-white transition-opacity hover:opacity-70">
@@ -465,7 +465,7 @@ export default function Jelajah() {
             <div className="relative h-[50vh] w-full md:h-auto md:flex-1">
               <Image
                 src="/padang.webp"
-                alt="Setup Starlink"
+                alt="Setup NSC"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -479,7 +479,7 @@ export default function Jelajah() {
           <div className="absolute inset-0 z-0 h-full w-full">
             <Image
               src="/tahan-cuaca.webp"
-              alt="Starlink Tahan Cuaca"
+              alt="NSC Tahan Cuaca"
               fill
               sizes="100vw"
               className="object-cover object-center"
@@ -491,7 +491,7 @@ export default function Jelajah() {
               TAHAN CUACA
             </h2>
             <p className="text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-              Starlink dirancang untuk tahan dalam berbagai kondisi—perangkat ini dapat mencairkan salju dan tahan hujan es, hujan lebat, serta angin kencang yang ekstrem.
+              NSC dirancang untuk tahan dalam berbagai kondisi—perangkat ini dapat mencairkan salju dan tahan hujan es, hujan lebat, serta angin kencang yang ekstrem.
             </p>
           </div>
         </section>
@@ -519,7 +519,7 @@ export default function Jelajah() {
                     BEKERJA DARI MANA SAJA
                   </h4>
                   <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                    "Starlink adalah item yang wajib dimiliki jika Anda harus bekerja jarak jauh atau suka bepergian ke tempat tanpa listrik, tapi tetap ingin terhubung ke internet! Sangat efektif!"
+                    "NSC adalah item yang wajib dimiliki jika Anda harus bekerja jarak jauh atau suka bepergian ke tempat tanpa listrik, tapi tetap ingin terhubung ke internet! Sangat efektif!"
                   </p>
                   <p className="mt-auto text-[13px] text-gray-400">
                     - Hoyung dari Amerika Serikat
@@ -530,7 +530,7 @@ export default function Jelajah() {
                     COCOK UNTUK RV
                   </h4>
                   <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                    "Sebagai pelanggan yang tinggal di RV, Starlink sangat cocok untuk kami. Kami memiliki akses internet terbaik di mana pun kami berada."
+                    "Sebagai pelanggan yang tinggal di RV, NSC sangat cocok untuk kami. Kami memiliki akses internet terbaik di mana pun kami berada."
                   </p>
                   <p className="mt-auto text-[13px] text-gray-400">
                     - Walter dari Amerika Serikat
@@ -541,7 +541,7 @@ export default function Jelajah() {
                     ANDAL DAN JARAK JAUH
                   </h4>
                   <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                    "Starlink mendukung pekerjaan online saya, memungkinkan saya pergi ke berbagai tempat dengan sumber internet satelit yang andal dan membantu saya memutuskan untuk segera pindah dan tinggal di pedesaan."
+                    "NSC mendukung pekerjaan online saya, memungkinkan saya pergi ke berbagai tempat dengan sumber internet satelit yang andal dan membantu saya memutuskan untuk segera pindah dan tinggal di pedesaan."
                   </p>
                   <p className="mt-auto text-[13px] text-gray-400">
                     - Jeeve dari Filipina
@@ -556,7 +556,7 @@ export default function Jelajah() {
               UJI COBA 30 HARI
             </h2>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
-              Coba Starlink selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
+              Coba NSC selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
             </p>
             <button className="rounded-sm bg-white px-12 py-3.5 text-[11px] font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
               MULAI

@@ -82,7 +82,7 @@ export default function Maritim() {
                 <div className="absolute inset-0 z-0 h-full w-full">
                     <Image
                         src="/maritim-hero.webp"
-                        alt="Menjelajah Bersama Starlink"
+                        alt="Menjelajah Bersama NSC"
                         fill
                         sizes="100vw"
                         className="object-cover object-center"
@@ -94,7 +94,7 @@ export default function Maritim() {
 
                 <div className="relative z-10 flex w-full flex-col items-center px-4 text-center mt-10">
                     <h1 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-                        STARLINK UNTUK MARITIM
+                        NSC UNTUK MARITIM
                     </h1>
                     <div className="mb-8 text-base text-white drop-shadow-md md:text-lg leading-relaxed">
                         <p className="mb-6 max-w-3xl text-lg text-white drop-shadow-md md:text-xl">
@@ -252,10 +252,10 @@ export default function Maritim() {
                             Dirancang untuk Lingkungan Ekstrem
                         </h2>
                         <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-                            Starlink dirancang untuk pemasangan permanen di kapal Anda dan tahan dingin serta panas ekstrem, hujan es, hujan lebat, dan angin topan.
+                            NSC dirancang untuk pemasangan permanen di kapal Anda dan tahan dingin serta panas ekstrem, hujan es, hujan lebat, dan angin topan.
                         </p>
                         <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-                            Starlink saat ini digunakan untuk mendapatkan video berkualitas tinggi dari pendaratan roket SpaceX di laut, menghasilkan liputan tanpa terputus kendati mesin roket ini mampu menghasilkan gaya berkekuatan hingga 190.000 pon.
+                            NSC saat ini digunakan untuk mendapatkan video berkualitas tinggi dari pendaratan roket SpaceX di laut, menghasilkan liputan tanpa terputus kendati mesin roket ini mampu menghasilkan gaya berkekuatan hingga 190.000 pon.
                         </p>
                     </div>
                 </section>
@@ -280,10 +280,10 @@ export default function Maritim() {
                             style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}
                         >
                             {[
-                                { id: 1, title: "PRODUSEN PESAWAT", img: "/aviasi1.webp", desc: "Dari pesawat supersonik hingga helikopter dan VTOL, Starlink memiliki perangkat keras..." },
+                                { id: 1, title: "PRODUSEN PESAWAT", img: "/aviasi1.webp", desc: "Dari pesawat supersonik hingga helikopter dan VTOL, NSC memiliki perangkat keras..." },
                                 { id: 2, title: "MASKAPAI PENERBANGAN", img: "/aviasi2.webp", desc: "Dengan lebih dari 30.000 penerbangan di Terminal Aero kami yang memiliki keandalan tinggi..." },
                                 { id: 3, title: "OPERATOR PESAWAT CHARTER", img: "/aviasi3.webp", desc: "Hubungi kami untuk mempelajari cara kami mentransformasi pengalaman Pesawat charter..." },
-                                { id: 4, title: "PUSAT LAYANAN & DEALER", img: "/aviasi4.webp", desc: "Bermitralah dengan Starlink dalam Jaringan Dealer Starlink untuk mendapatkan manfaat..." }
+                                { id: 4, title: "PUSAT LAYANAN & DEALER", img: "/aviasi4.webp", desc: "Bermitralah dengan NSC dalam Jaringan Dealer NSC untuk mendapatkan manfaat..." }
                             ].map((card) => (
                                 <div key={card.id} className="flex min-w-[85vw] flex-col snap-start md:min-w-[380px] lg:min-w-[420px] flex-1 select-none">
                                     <div className="relative mb-6 aspect-video w-full overflow-hidden bg-[#111111] pointer-events-none">
@@ -331,7 +331,7 @@ export default function Maritim() {
                             JANGKAUAN MARITIM GLOBAL
                         </h2>
                         <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-                            Dengan konstelasi satelit terbesar di dunia, Starlink menyediakan konektivitas di samudra dan perairan di darat di seluruh benua, termasuk jangkauan di perairan internasional. Lihat <span className="font-bold text-white cursor-pointer hover:underline">PERTANYAAN UMUM</span> kami untuk mempelajari selengkapnya.
+                            Dengan konstelasi satelit terbesar di dunia, NSC menyediakan konektivitas di samudra dan perairan di darat di seluruh benua, termasuk jangkauan di perairan internasional. Lihat <span className="font-bold text-white cursor-pointer hover:underline">PERTANYAAN UMUM</span> kami untuk mempelajari selengkapnya.
                         </p>
                     </div>
                 </section>
@@ -365,7 +365,7 @@ export default function Maritim() {
                                 <div className="relative aspect-video w-full max-w-[650px] md:aspect-square">
                                     <Image
                                         src="/kapal.webp"
-                                        alt="Starlink Service"
+                                        alt="NSC Service"
                                         fill
                                         className="object-contain object-center md:object-right"
                                     />
@@ -397,10 +397,10 @@ export default function Maritim() {
                                 PENGELOLAAN ARMADA YANG AMAN, PEMANTAUAN JARAK JAUH
                             </h2>
                             <p className="mb-8 text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                                Pantau dan kelola armada Starlink Anda dari jarak jauh melalui satu portal, dengan kemampuan untuk menunda boot ulang pembaruan perangkat lunak agar terhindar dari gangguan operasional.
+                                Pantau dan kelola armada NSC Anda dari jarak jauh melalui satu portal, dengan kemampuan untuk menunda boot ulang pembaruan perangkat lunak agar terhindar dari gangguan operasional.
                             </p>
                             <p className="mb-8 text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                                Starlink menerapkan enkripsi end-to-end untuk melindungi data Anda dan kerahasiaan traffic pengguna.
+                                NSC menerapkan enkripsi end-to-end untuk melindungi data Anda dan kerahasiaan traffic pengguna.
                             </p>
                             <button className="border-[1.5px] border-white bg-transparent px-8 py-3 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
                                 Lihat Panduan Pembeli Bisnis
@@ -429,7 +429,7 @@ export default function Maritim() {
                                 <div className="relative aspect-video w-full max-w-[650px] md:aspect-square">
                                     <Image
                                         src="/pelabuhan.webp"
-                                        alt="Starlink Service"
+                                        alt="NSC Service"
                                         fill
                                         className="object-contain object-center md:object-right"
                                     />
@@ -442,13 +442,13 @@ export default function Maritim() {
                                 </h2>
                                 <div className="space-y-6 text-[15px] leading-relaxed text-gray-200">
                                     <p>
-                                        Dengan menyediakan konektivitas berkelanjutan, Starlink dapat membantu meningkatkan keselamatan di daerah terpencil dan mengurangi bahaya di tempat kerja.
+                                        Dengan menyediakan konektivitas berkelanjutan, NSC dapat membantu meningkatkan keselamatan di daerah terpencil dan mengurangi bahaya di tempat kerja.
                                     </p>
                                     <p>
                                         Kru jarak jauh juga dapat berkomunikasi dengan kru darat untuk meningkatkan kepuasan karyawan selama periode berlayar jangka panjang.
                                     </p>
                                     <p>
-                                        Unduh aplikasi Starlink untuk menentukan lokasi pemasangan terbaik di kapal Anda.
+                                        Unduh aplikasi NSC untuk menentukan lokasi pemasangan terbaik di kapal Anda.
                                     </p>
                                 </div>
 
@@ -509,7 +509,7 @@ export default function Maritim() {
                             <div className="relative w-full max-w-full aspect-[21/18] md:aspect-[21/15]">
                                 <Image
                                     src="/hardware.webp"
-                                    alt="Starlink Maritim Dish"
+                                    alt="NSC Maritim Dish"
                                     fill
                                     className="object-contain object-center"
                                 />
@@ -544,10 +544,10 @@ export default function Maritim() {
                                 {/* Item 1 */}
                                 <div className="flex min-w-[200px] flex-col items-center justify-end md:min-w-[260px] select-none">
                                     <div className="relative mb-8 h-48 w-full md:h-64 pointer-events-none">
-                                        <Image src="/starlink1.webp" alt="Starlink" fill className="object-contain object-bottom" />
+                                        <Image src="/NSC1.webp" alt="NSC" fill className="object-contain object-bottom" />
                                     </div>
                                     <h4 className="text-center text-[15px] font-normal uppercase tracking-wider text-white">
-                                        STARLINK
+                                        NSC
                                     </h4>
                                 </div>
 
@@ -584,10 +584,10 @@ export default function Maritim() {
                                 {/* Item 5 */}
                                 <div className="flex min-w-[200px] flex-col items-center justify-end md:min-w-[260px] select-none">
                                     <div className="relative mb-8 h-48 w-full md:h-64 pointer-events-none">
-                                        <Image src="/kabelstar.webp" alt="Kabel Starlink" fill className="object-contain object-bottom" />
+                                        <Image src="/kabelstar.webp" alt="Kabel NSC" fill className="object-contain object-bottom" />
                                     </div>
                                     <h4 className="text-center text-[15px] font-normal uppercase tracking-wider text-white">
-                                        KABEL STARLINK
+                                        KABEL NSC
                                     </h4>
                                 </div>
 
@@ -650,7 +650,7 @@ export default function Maritim() {
                                 AKSESORI & DUDUKAN
                             </h2>
                             <p className="text-[13px] font-medium text-gray-500">
-                                Tersedia di Starlink Shop setelah pembelian
+                                Tersedia di NSC Shop setelah pembelian
                             </p>
                         </div>
 
@@ -714,10 +714,10 @@ export default function Maritim() {
                                 <div className="flex min-w-[280px] flex-col snap-start items-center md:min-w-[320px] flex-1 select-none">
                                     <div className="relative mb-6 aspect-square w-full overflow-hidden bg-[#1a1a1a] pointer-events-none">
                                         <div className="absolute left-4 top-4 z-10 text-[13px] text-gray-400">8m</div>
-                                        <Image src="/kabel8.webp" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 hover:scale-105" alt="Kabel Starlink 8m" />
+                                        <Image src="/kabel8.webp" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 hover:scale-105" alt="Kabel NSC 8m" />
                                     </div>
                                     <h4 className="text-center text-[14px] font-normal uppercase tracking-wide text-white">
-                                        KABEL STARLINK 8 M<br />PERFORMANCE (GEN 2)
+                                        KABEL NSC 8 M<br />PERFORMANCE (GEN 2)
                                     </h4>
                                 </div>
 
@@ -754,7 +754,7 @@ export default function Maritim() {
                                     KONEKTIVITAS TAMU
                                 </h4>
                                 <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
-                                    "[Starlink] memungkinkan kru kami untuk terus berkomunikasi dengan teman, keluarga, dan orang-orang tercinta, serta memudahkan tamu kami untuk membagikan semua momen dan kenangan indah mereka ... Selain itu, bandwidth tambahan dengan latensi rendah memberikan kemampuan dan fleksibilitas kepada sembilan perusahaan kapal pesiar kelas dunia kami untuk memperkenalkan layanan tamu dan fitur baru, serta membantu meningkatkan fungsi operasional, seperti pemantauan peralatan di kapal dan komunikasi real-time antara kru kapal dan darat."
+                                    "[NSC] memungkinkan kru kami untuk terus berkomunikasi dengan teman, keluarga, dan orang-orang tercinta, serta memudahkan tamu kami untuk membagikan semua momen dan kenangan indah mereka ... Selain itu, bandwidth tambahan dengan latensi rendah memberikan kemampuan dan fleksibilitas kepada sembilan perusahaan kapal pesiar kelas dunia kami untuk memperkenalkan layanan tamu dan fitur baru, serta membantu meningkatkan fungsi operasional, seperti pemantauan peralatan di kapal dan komunikasi real-time antara kru kapal dan darat."
                                 </p>
                                 <p className="text-[13px] font-medium leading-relaxed text-gray-400 md:text-[14px]">
                                     - John Harshaw, Wakil Presiden Konektivitas TI, Pelabuhan, dan Destinasi di Carnival Cruise Line
@@ -767,7 +767,7 @@ export default function Maritim() {
                                     SOLUSI BARU
                                 </h4>
                                 <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
-                                    "Menggunakan layanan Low Earth Orbit, latensi rendah, dan bandwidth tinggi SpaceX Starlink di seluruh armada kami adalah pencapaian besar dalam mengatasi tantangan konektivitas di industri dengan tenaga kerja yang global dan mobil. Dengan layanan ini, armada kami tak ubahnya menjadi kantor jarak jauh kami yang mendukung keselamatan dan kesejahteraan awak - dan membuat kami dapat mengembangkan solusi baru yang secara teknis dan finansial tidak dapat diwujudkan beberapa tahun lalu."
+                                    "Menggunakan layanan Low Earth Orbit, latensi rendah, dan bandwidth tinggi SpaceX NSC di seluruh armada kami adalah pencapaian besar dalam mengatasi tantangan konektivitas di industri dengan tenaga kerja yang global dan mobil. Dengan layanan ini, armada kami tak ubahnya menjadi kantor jarak jauh kami yang mendukung keselamatan dan kesejahteraan awak - dan membuat kami dapat mengembangkan solusi baru yang secara teknis dan finansial tidak dapat diwujudkan beberapa tahun lalu."
                                 </p>
                                 <p className="text-[13px] font-medium leading-relaxed text-gray-400 md:text-[14px]">
                                     - Torsten Pedersen, Chief Operating Officer, Seaspan Corporation
@@ -782,7 +782,7 @@ export default function Maritim() {
                     {/* ========================================= */}
                     <section className="relative z-10 mx-auto w-full max-w-[1400px] px-8 py-24 md:px-16 lg:px-24">
                         <h3 className="mb-10 text-[15px] font-medium tracking-wide text-white">
-                            LIHAT PAKET LAYANAN STARLINK LAINNYA
+                            LIHAT PAKET LAYANAN NSC LAINNYA
                         </h3>
 
                         <div className="flex flex-col gap-6 md:flex-row">
@@ -839,7 +839,7 @@ export default function Maritim() {
                             UJI COBA 30 HARI
                         </h2>
                         <p className="mb-10 max-w-xl text-[15px] leading-relaxed text-gray-300 md:text-[17px]">
-                            Coba Starlink selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
+                            Coba NSC selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
                         </p>
                         <button className="rounded-sm bg-white px-14 py-4 text-[11px] font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
                             MULAI

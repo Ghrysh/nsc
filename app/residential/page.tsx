@@ -82,7 +82,7 @@ export default function Residensial() {
                 <div className="absolute inset-0 z-0 h-full w-full">
                     <Image
                         src="/residential.webp"
-                        alt="Menjelajah Bersama Starlink"
+                        alt="Menjelajah Bersama NSC"
                         fill
                         sizes="100vw"
                         className="object-cover object-center"
@@ -94,7 +94,7 @@ export default function Residensial() {
 
                 <div className="relative z-10 flex w-full flex-col items-center px-4 text-center mt-10">
                     <h1 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-                        STARLINK UNTUK RUMAH
+                        NSC UNTUK RUMAH
                     </h1>
                     <div className="mb-8 text-base font-bold text-white drop-shadow-md md:text-lg leading-relaxed">
                         <p>
@@ -104,7 +104,7 @@ export default function Residensial() {
                     </div>
                     <div className="mb-10 text-sm font-medium text-white drop-shadow-md md:text-[15px] leading-relaxed">
                         <p>
-                            Pesan sebelum 23/4 | starlinkindonesia@spacex.com | 007 803 6 219 919 (Telepon)<br />
+                            Pesan sebelum 23/4 | NSCindonesia@spacex.com | 007 803 6 219 919 (Telepon)<br />
                             +62 823 1001 0006 (WhatsApp)
                         </p>
                     </div>
@@ -242,7 +242,7 @@ export default function Residensial() {
 
                     <div className="mt-40 mb-10 flex w-full flex-col items-center text-center">
                         <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight text-white md:text-5xl">
-                            TERIMA PEMBARUAN EMAIL STARLINK
+                            TERIMA PEMBARUAN EMAIL NSC
                         </h2>
                         <p className="mb-10 text-lg text-white">Daftar di bawah ini</p>
                         <div className="flex w-full max-w-lg flex-col gap-4 sm:flex-row sm:gap-2">
@@ -300,13 +300,13 @@ export default function Residensial() {
                                         id: 2,
                                         title: "BEKERJA DARI RUMAH",
                                         img: "/wfh.webp",
-                                        desc: "Bekerja dari rumah dengan internet berkecepatan tinggi Starlink untuk panggilan video frekuen dengan audio jernih, video tajam, dan percakapan tanpa gangguan."
+                                        desc: "Bekerja dari rumah dengan internet berkecepatan tinggi NSC untuk panggilan video frekuen dengan audio jernih, video tajam, dan percakapan tanpa gangguan."
                                     },
                                     {
                                         id: 3,
                                         title: "BERMAIN GAME DENGAN LATENSI RENDAH",
                                         img: "/game.webp",
-                                        desc: "Bermain game di rumah atau saat bepergian dengan jaringan latensi rendah Starlink."
+                                        desc: "Bermain game di rumah atau saat bepergian dengan jaringan latensi rendah NSC."
                                     },
                                     {
                                         id: 4,
@@ -385,8 +385,8 @@ export default function Residensial() {
                 <section className="relative flex h-screen w-full items-start justify-end overflow-hidden pt-25">
                     <div className="absolute inset-0 z-0 h-full w-full">
                         <Image
-                            src="/starlink.webp"
-                            alt="Starlink Mini"
+                            src="/NSC.webp"
+                            alt="NSC Mini"
                             fill
                             sizes="100vw"
                             className="object-cover object-start"
@@ -395,10 +395,10 @@ export default function Residensial() {
                     </div>
                     <div className="relative z-10 flex w-full max-w-2xl flex-col items-start px-8 text-left md:px-16 lg:px-24">
                         <h2 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight text-white drop-shadow-md md:text-5xl lg:text-[42px]">
-                            STARLINK MINI
+                            NSC MINI
                         </h2>
                         <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-                            Starlink Mini adalah kit portabel yang ringkas dan dapat dengan mudah dimasukkan ke dalam ransel, dirancang untuk menyediakan internet berkecepatan tinggi dan latensi rendah saat singgah.
+                            NSC Mini adalah kit portabel yang ringkas dan dapat dengan mudah dimasukkan ke dalam ransel, dirancang untuk menyediakan internet berkecepatan tinggi dan latensi rendah saat singgah.
                         </p>
                         <p className="mb-10 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
                             Kit mencakup router Wi-Fi bawaan, konsumsi daya yang lebih rendah, input daya DC, dan <span className="font-bold text-white">kecepatan unduhan maksimal lebih dari 200 Mbps.</span>
@@ -454,7 +454,7 @@ export default function Residensial() {
                                 Andal & tangguh
                             </h2>
                             <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                                Starlink menyediakan internet berkecepatan tinggi dan latensi rendah dengan uptime rata-rata lebih dari 99,9%, dan konektivitas yang andal di seluruh benua. Dirancang untuk tahan cuaca ekstrem - Kit Starlink dapat mencairkan salju dan tahan hujan es, hujan lebat, serta angin kencang.{" "}
+                                NSC menyediakan internet berkecepatan tinggi dan latensi rendah dengan uptime rata-rata lebih dari 99,9%, dan konektivitas yang andal di seluruh benua. Dirancang untuk tahan cuaca ekstrem - Kit NSC dapat mencairkan salju dan tahan hujan es, hujan lebat, serta angin kencang.{" "}
                                 <a href="#" className="font-bold text-white underline decoration-white underline-offset-4 transition-opacity hover:opacity-70">
                                     Pelajari selengkapnya di sini.
                                 </a>
@@ -481,7 +481,7 @@ export default function Residensial() {
                                 Internet yang dirancang untuk setiap kebutuhan
                             </h2>
                             <p className="mb-6 text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                                Starlink menghadirkan kecepatan hingga 400+ Mbps di sebagian besar tempat di seluruh benua, jadi Anda bebas menikmati streaming 4K di beberapa perangkat sekaligus, bekerja dari rumah secara efektif, bermain game online, menjelajahi media sosial, dan banyak lagi.
+                                NSC menghadirkan kecepatan hingga 400+ Mbps di sebagian besar tempat di seluruh benua, jadi Anda bebas menikmati streaming 4K di beberapa perangkat sekaligus, bekerja dari rumah secara efektif, bermain game online, menjelajahi media sosial, dan banyak lagi.
                             </p>
                             <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
                                 Periksa kecepatannya di wilayah Anda{" "}
@@ -513,7 +513,7 @@ export default function Residensial() {
                                 <div className="relative aspect-square w-full max-w-[600px]">
                                     <Image
                                         src="/orbit.webp"
-                                        alt="Starlink Setup"
+                                        alt="NSC Setup"
                                         fill
                                         className="object-contain"
                                     />
@@ -555,7 +555,7 @@ export default function Residensial() {
                                 <div className="relative aspect-video w-full max-w-[650px] md:aspect-square">
                                     <Image
                                         src="/image2.webp"
-                                        alt="Starlink Service"
+                                        alt="NSC Service"
                                         fill
                                         className="object-contain object-center md:object-right"
                                     />
@@ -577,7 +577,7 @@ export default function Residensial() {
                             ISI KOTAK STANDAR
                         </h2>
                         <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm max-w-lg">
-                            Kit Starlink hadir dengan semua yang Anda butuhkan untuk online dalam hitungan menit.
+                            Kit NSC hadir dengan semua yang Anda butuhkan untuk online dalam hitungan menit.
                         </p>
                         <button className="group flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.1em] text-white transition-opacity hover:opacity-70">
                             <span className="border-b border-transparent pb-0.5 transition-all duration-300 group-hover:border-white">
@@ -627,10 +627,10 @@ export default function Residensial() {
                                 {/* Item 1 */}
                                 <div className="flex min-w-[180px] flex-col items-center justify-end md:min-w-[220px] select-none">
                                     <div className="relative mb-6 h-36 w-full md:h-48 pointer-events-none">
-                                        <Image src="/starlinkkotak.webp" alt="Starlink" fill className="object-contain object-bottom" />
+                                        <Image src="/NSCkotak.webp" alt="NSC" fill className="object-contain object-bottom" />
                                     </div>
                                     <h4 className="text-center text-[14px] font-normal uppercase tracking-wider text-white">
-                                        STARLINK
+                                        NSC
                                     </h4>
                                 </div>
 
@@ -657,10 +657,10 @@ export default function Residensial() {
                                 {/* Item 4 */}
                                 <div className="flex min-w-[180px] flex-col items-center justify-end md:min-w-[220px] select-none">
                                     <div className="relative mb-6 h-36 w-full md:h-48 pointer-events-none">
-                                        <Image src="/kabelstarlink.webp" alt="Kabel Starlink" fill className="object-contain object-bottom" />
+                                        <Image src="/kabelNSC.webp" alt="Kabel NSC" fill className="object-contain object-bottom" />
                                     </div>
                                     <h4 className="text-center text-[14px] font-normal uppercase tracking-wider text-white">
-                                        KABEL STARLINK
+                                        KABEL NSC
                                     </h4>
                                 </div>
 
@@ -733,7 +733,7 @@ export default function Residensial() {
                                     AKSESORI & DUDUKAN
                                 </h2>
                                 <p className="text-[13px] font-medium text-gray-500">
-                                    Tersedia di Starlink Shop setelah pembelian
+                                    Tersedia di NSC Shop setelah pembelian
                                 </p>
                             </div>
 
@@ -831,7 +831,7 @@ export default function Residensial() {
                                         BEKERJA DARI MANA SAJA
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "Starlink adalah item yang wajib dimiliki jika Anda harus bekerja jarak jauh atau suka bepergian ke tempat tanpa listrik, tapi tetap ingin terhubung ke internet! Sangat efektif!"
+                                        "NSC adalah item yang wajib dimiliki jika Anda harus bekerja jarak jauh atau suka bepergian ke tempat tanpa listrik, tapi tetap ingin terhubung ke internet! Sangat efektif!"
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Hoyung dari Amerika Serikat
@@ -842,7 +842,7 @@ export default function Residensial() {
                                         COCOK UNTUK RV
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "Sebagai pelanggan yang tinggal di RV, Starlink sangat cocok untuk kami. Kami memiliki akses internet terbaik di mana pun kami berada."
+                                        "Sebagai pelanggan yang tinggal di RV, NSC sangat cocok untuk kami. Kami memiliki akses internet terbaik di mana pun kami berada."
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Walter dari Amerika Serikat
@@ -853,7 +853,7 @@ export default function Residensial() {
                                         ANDAL DAN JARAK JAUH
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "Starlink mendukung pekerjaan online saya, memungkinkan saya pergi ke berbagai tempat dengan sumber internet satelit yang andal dan membantu saya memutuskan untuk segera pindah dan tinggal di pedesaan."
+                                        "NSC mendukung pekerjaan online saya, memungkinkan saya pergi ke berbagai tempat dengan sumber internet satelit yang andal dan membantu saya memutuskan untuk segera pindah dan tinggal di pedesaan."
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Jeeve dari Filipina
@@ -868,7 +868,7 @@ export default function Residensial() {
                             UJI COBA 30 HARI
                         </h2>
                         <p className="mb-10 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
-                            Coba Starlink selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
+                            Coba NSC selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
                         </p>
                         <button className="rounded-sm bg-white px-12 py-3.5 text-[11px] font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
                             MULAI

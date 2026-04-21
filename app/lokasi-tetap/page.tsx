@@ -88,7 +88,7 @@ export default function LokasiTetap() {
                 <div className="absolute inset-0 z-0 h-full w-full">
                     <Image
                         src="/hero-lokasi.webp"
-                        alt="Menjelajah Bersama Starlink"
+                        alt="Menjelajah Bersama NSC"
                         fill
                         sizes="100vw"
                         className="object-cover object-center"
@@ -100,7 +100,7 @@ export default function LokasiTetap() {
 
                 <div className="relative z-10 flex w-full flex-col items-center px-4 text-center mt-10">
                     <h1 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-                        STARLINK UNTUK LOKASI TETAP
+                        NSC UNTUK LOKASI TETAP
                     </h1>
                     <div className="mb-8 text-base text-white drop-shadow-md md:text-lg leading-relaxed">
                         <p className="max-w-3xl text-lg text-white drop-shadow-md md:text-xl">
@@ -297,7 +297,7 @@ export default function LokasiTetap() {
                             TAHAN CUACA
                         </h2>
                         <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-                            Starlink dirancang untuk tahan dalam berbagai kondisi—perangkat ini dapat mencairkan salju dan tahan hujan es, hujan lebat, serta angin kencang yang ekstrem.
+                            NSC dirancang untuk tahan dalam berbagai kondisi—perangkat ini dapat mencairkan salju dan tahan hujan es, hujan lebat, serta angin kencang yang ekstrem.
                         </p>
                     </div>
                 </section>
@@ -321,10 +321,10 @@ export default function LokasiTetap() {
                             style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}
                         >
                             {[
-                                { id: 1, title: "PRODUSEN PESAWAT", img: "/aviasi1.webp", desc: "Dari pesawat supersonik hingga helikopter dan VTOL, Starlink memiliki perangkat keras..." },
+                                { id: 1, title: "PRODUSEN PESAWAT", img: "/aviasi1.webp", desc: "Dari pesawat supersonik hingga helikopter dan VTOL, NSC memiliki perangkat keras..." },
                                 { id: 2, title: "MASKAPAI PENERBANGAN", img: "/aviasi2.webp", desc: "Dengan lebih dari 30.000 penerbangan di Terminal Aero kami yang memiliki keandalan tinggi..." },
                                 { id: 3, title: "OPERATOR PESAWAT CHARTER", img: "/aviasi3.webp", desc: "Hubungi kami untuk mempelajari cara kami mentransformasi pengalaman Pesawat charter..." },
-                                { id: 4, title: "PUSAT LAYANAN & DEALER", img: "/aviasi4.webp", desc: "Bermitralah dengan Starlink dalam Jaringan Dealer Starlink untuk mendapatkan manfaat..." }
+                                { id: 4, title: "PUSAT LAYANAN & DEALER", img: "/aviasi4.webp", desc: "Bermitralah dengan NSC dalam Jaringan Dealer NSC untuk mendapatkan manfaat..." }
                             ].map((card) => (
                                 <div key={card.id} className="flex min-w-[85vw] flex-col snap-start md:min-w-[380px] lg:min-w-[420px] flex-1 select-none">
                                     <div className="relative mb-6 aspect-video w-full overflow-hidden bg-[#111111] pointer-events-none">
@@ -371,10 +371,10 @@ export default function LokasiTetap() {
                                 TERUS JALANKAN BISNIS ANDA
                             </h2>
                             <p className="mb-8 text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                                Konstelasi Starlink menyediakan koneksi tangguh yang tidak tergantung pada pemadaman terestrial. Redundansi jalur melalui beberapa satelit dan stasiun bumi memastikan gangguan minimal.
+                                Konstelasi NSC menyediakan koneksi tangguh yang tidak tergantung pada pemadaman terestrial. Redundansi jalur melalui beberapa satelit dan stasiun bumi memastikan gangguan minimal.
                             </p>
                             <p className="mb-8 text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                                Pantau dan kelola beberapa Kit Starlink dari jarak jauh melalui satu dasbor, dengan kemampuan untuk menunda boot ulang pembaruan perangkat lunak sehingga terhindar dari gangguan operasional.
+                                Pantau dan kelola beberapa Kit NSC dari jarak jauh melalui satu dasbor, dengan kemampuan untuk menunda boot ulang pembaruan perangkat lunak sehingga terhindar dari gangguan operasional.
                             </p>
                             <button className="border-[1.5px] border-white bg-transparent px-8 py-3 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
                                 Lihat Panduan Pembeli Bisnis
@@ -444,7 +444,7 @@ export default function LokasiTetap() {
 
                                 <div className="max-w-xl">
                                     <p className="text-[15px] leading-relaxed text-gray-200">
-                                        Atur Starlink hanya dengan dua langkah. Petunjuk dapat dijalankan dari urutan mana saja:
+                                        Atur NSC hanya dengan dua langkah. Petunjuk dapat dijalankan dari urutan mana saja:
                                     </p>
 
                                     <div className="my-8 flex flex-col gap-3 border-l-[2px] border-white/20 pl-5 py-1">
@@ -457,7 +457,7 @@ export default function LokasiTetap() {
                                     </div>
 
                                     <p className="text-[15px] leading-relaxed text-gray-200">
-                                        Posisi Starlink harus bebas halangan dan mengarah langsung ke langit. Unduh aplikasi Starlink untuk menentukan lokasi pemasangan terbaik Anda.
+                                        Posisi NSC harus bebas halangan dan mengarah langsung ke langit. Unduh aplikasi NSC untuk menentukan lokasi pemasangan terbaik Anda.
                                     </p>
                                 </div>
 
@@ -488,7 +488,7 @@ export default function LokasiTetap() {
                                 <div className="relative aspect-video w-full max-w-[650px] md:aspect-square">
                                     <Image
                                         src="/konstruksi1.webp"
-                                        alt="Starlink Service"
+                                        alt="NSC Service"
                                         fill
                                         className="object-contain object-center md:object-right"
                                     />
@@ -516,7 +516,7 @@ export default function LokasiTetap() {
                                     ALAMAT IP<br />PUBLIK
                                 </h3>
                                 <p className="text-[13px] leading-relaxed text-gray-300">
-                                    IPv4 Starlink secara dinamis ditetapkan melalui DHCP. Starlink juga secara default mendukung IPv6.
+                                    IPv4 NSC secara dinamis ditetapkan melalui DHCP. NSC juga secara default mendukung IPv6.
                                 </p>
                             </div>
 
@@ -533,7 +533,7 @@ export default function LokasiTetap() {
                                     LOKASI<br />TANPA BATAS
                                 </h3>
                                 <p className="text-[13px] leading-relaxed text-gray-300">
-                                    Setelah memesan Starlink pertama Anda, tambahkan lokasi sebanyak yang diperlukan di portal akun Anda.
+                                    Setelah memesan NSC pertama Anda, tambahkan lokasi sebanyak yang diperlukan di portal akun Anda.
                                 </p>
                             </div>
 
@@ -585,7 +585,7 @@ export default function LokasiTetap() {
                             <div className="relative w-full max-w-full aspect-[21/18] md:aspect-[21/15]">
                                 <Image
                                     src="/hardware.webp"
-                                    alt="Starlink Maritim Dish"
+                                    alt="NSC Maritim Dish"
                                     fill
                                     className="object-contain object-center"
                                 />
@@ -617,10 +617,10 @@ export default function LokasiTetap() {
                                 {/* Item 1 */}
                                 <div className="flex min-w-[200px] flex-col items-center justify-end md:min-w-[260px] select-none">
                                     <div className="relative mb-8 h-48 w-full md:h-64 pointer-events-none">
-                                        <Image src="/starlink1.webp" alt="Starlink" fill className="object-contain object-bottom" />
+                                        <Image src="/NSC1.webp" alt="NSC" fill className="object-contain object-bottom" />
                                     </div>
                                     <h4 className="text-center text-[15px] font-normal uppercase tracking-wider text-white">
-                                        STARLINK
+                                        NSC
                                     </h4>
                                 </div>
 
@@ -657,10 +657,10 @@ export default function LokasiTetap() {
                                 {/* Item 5 */}
                                 <div className="flex min-w-[200px] flex-col items-center justify-end md:min-w-[260px] select-none">
                                     <div className="relative mb-8 h-48 w-full md:h-64 pointer-events-none">
-                                        <Image src="/kabelstar.webp" alt="Kabel Starlink" fill className="object-contain object-bottom" />
+                                        <Image src="/kabelstar.webp" alt="Kabel NSC" fill className="object-contain object-bottom" />
                                     </div>
                                     <h4 className="text-center text-[15px] font-normal uppercase tracking-wider text-white">
-                                        KABEL STARLINK
+                                        KABEL NSC
                                     </h4>
                                 </div>
 
@@ -722,7 +722,7 @@ export default function LokasiTetap() {
                                 AKSESORI & DUDUKAN
                             </h2>
                             <p className="text-[13px] font-medium text-gray-500">
-                                Tersedia di Starlink Shop setelah pembelian
+                                Tersedia di NSC Shop setelah pembelian
                             </p>
                         </div>
 
@@ -784,10 +784,10 @@ export default function LokasiTetap() {
                                 <div className="flex min-w-[280px] flex-col snap-start items-center md:min-w-[320px] flex-1 select-none">
                                     <div className="relative mb-6 aspect-square w-full overflow-hidden bg-[#1a1a1a] pointer-events-none">
                                         <div className="absolute left-4 top-4 z-10 text-[13px] text-gray-400">8m</div>
-                                        <Image src="/kabel8.webp" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 hover:scale-105" alt="Kabel Starlink 8m" />
+                                        <Image src="/kabel8.webp" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 hover:scale-105" alt="Kabel NSC 8m" />
                                     </div>
                                     <h4 className="text-center text-[14px] font-normal uppercase tracking-wide text-white">
-                                        KABEL STARLINK 8 M<br />PERFORMANCE (GEN 2)
+                                        KABEL NSC 8 M<br />PERFORMANCE (GEN 2)
                                     </h4>
                                 </div>
 
@@ -824,7 +824,7 @@ export default function LokasiTetap() {
                                     SOLUSI TERUKUR
                                 </h4>
                                 <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-[14px]">
-                                    "Layanan Starlink jauh lebih mudah dipasang dan diukur dibanding broadband konvensional, tanpa mengorbankan keandalan dan performa. Layanan ini berperan penting dalam mempertahankan standar tinggi layanan tamu dan operasi toko kami di lebih dari 450 lokasi di 16 negara bagian barat tengah."
+                                    "Layanan NSC jauh lebih mudah dipasang dan diukur dibanding broadband konvensional, tanpa mengorbankan keandalan dan performa. Layanan ini berperan penting dalam mempertahankan standar tinggi layanan tamu dan operasi toko kami di lebih dari 450 lokasi di 16 negara bagian barat tengah."
                                 </p>
                                 <p className="mt-auto text-[13px] font-medium leading-relaxed text-gray-400">
                                     - Toserba Casey's
@@ -837,7 +837,7 @@ export default function LokasiTetap() {
                                     KOMUNIKASI LINTAS LOKASI
                                 </h4>
                                 <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-[14px]">
-                                    "Membangun komunikasi digital berkecepatan tinggi bahkan di lokasi kerja paling terpencil di Kanada telah benar-benar mengubah bisnis konstruksi kami. Efisiensi kami telah meroket dengan kolaborasi real-time, dan itu hanya satu bagian dari cerita. Sama pentingnya adalah dorongan besar dalam semangat staf. Dengan Starlink Bisnis, tim kami tahu mereka bisa terus menjalin komunikasi dengan keluarga, di mana pun mereka bekerja."
+                                    "Membangun komunikasi digital berkecepatan tinggi bahkan di lokasi kerja paling terpencil di Kanada telah benar-benar mengubah bisnis konstruksi kami. Efisiensi kami telah meroket dengan kolaborasi real-time, dan itu hanya satu bagian dari cerita. Sama pentingnya adalah dorongan besar dalam semangat staf. Dengan NSC Bisnis, tim kami tahu mereka bisa terus menjalin komunikasi dengan keluarga, di mana pun mereka bekerja."
                                 </p>
                                 <p className="mt-auto text-[13px] font-medium leading-relaxed text-gray-400">
                                     - Ryan L, Manajer TI, Perusahaan konstruksi
@@ -850,7 +850,7 @@ export default function LokasiTetap() {
                                     PEMANTAUAN JARAK JAUH
                                 </h4>
                                 <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-[14px]">
-                                    "Berkat Starlink, kami sekarang dapat memiliki 100% waktu aktif dan memantau lahan kami dari jauh (melalui kamera IP), menggunakan telepon VoIP, dan melakukan bisnis yang andal. Kami melakukan riset, mengobrol melalui video, mengunggah video, belajar dari petani lain, dan bisa berjual beli melalui internet. Sebelumnya, konektivitas hanya dilakukan melalui jangkauan ponsel dan bandwidth/ketersediaannya tidak dapat diandalkan atau cepat."
+                                    "Berkat NSC, kami sekarang dapat memiliki 100% waktu aktif dan memantau lahan kami dari jauh (melalui kamera IP), menggunakan telepon VoIP, dan melakukan bisnis yang andal. Kami melakukan riset, mengobrol melalui video, mengunggah video, belajar dari petani lain, dan bisa berjual beli melalui internet. Sebelumnya, konektivitas hanya dilakukan melalui jangkauan ponsel dan bandwidth/ketersediaannya tidak dapat diandalkan atau cepat."
                                 </p>
                                 <p className="mt-auto text-[13px] font-medium leading-relaxed text-gray-400">
                                     - Brian F, Pemilik Lahan Pertanian
@@ -866,7 +866,7 @@ export default function LokasiTetap() {
                     {/* ========================================= */}
                     <section className="relative z-10 mx-auto w-full max-w-[1400px] px-8 py-24 md:px-16 lg:px-24">
                         <h3 className="mb-10 text-[15px] font-medium tracking-wide text-white">
-                            LIHAT PAKET LAYANAN STARLINK LAINNYA
+                            LIHAT PAKET LAYANAN NSC LAINNYA
                         </h3>
 
                         <div className="flex flex-col gap-6 md:flex-row">
@@ -923,7 +923,7 @@ export default function LokasiTetap() {
                                 UJI COBA 30 HARI
                             </h2>
                             <p className="mb-12 max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg">
-                                Coba Starlink selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
+                                Coba NSC selama 30 hari. Jika tidak puas, Anda bisa mendapatkan pengembalian dana penuh.
                             </p>
 
                             <div className="flex w-full max-w-2xl flex-col gap-2 text-left">

@@ -17,7 +17,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-4">
             <span className="text-[13px] font-bold text-white">
-              Ingin terus menerima informasi terbaru Starlink?
+              Ingin terus menerima informasi terbaru NSC?
             </span>
             <div className="flex items-end gap-4">
               <input 
@@ -43,12 +43,9 @@ export default function Footer() {
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.008 4.076H5.036z" />
               </svg>
             </a>
-            <span>Starlink © 2026</span>
+            <span>© 2026 NSC, ALL RIGHTS RESERVED</span>
             <span>
-              Starlink adalah divisi dari SpaceX. Kunjungi kami di{" "}
-              <a href="#" className="font-bold text-white transition-opacity hover:opacity-70">
-                spacex.com
-              </a>
+              Internet Cepat Sampai Pelosok Negeri
             </span>
           </div>
 

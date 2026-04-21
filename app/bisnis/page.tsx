@@ -11,7 +11,7 @@ export default function Bisnis() {
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/hero_bisnis.webp"
-            alt="Starlink Business"
+            alt="NSC Business"
             fill
             sizes="100vw"
             className="object-cover object-center"
@@ -125,10 +125,10 @@ export default function Bisnis() {
                 ONLINE DENGAN MUDAH
               </h2>
               <p className="mb-6 text-sm leading-relaxed text-gray-300 md:text-base">
-                Kit Starlink hadir dengan semua yang Anda butuhkan untuk online dalam hitungan menit. Anda hanya butuh tempat bebas halangan dan mengarah langsung ke langit.
+                Kit NSC hadir dengan semua yang Anda butuhkan untuk online dalam hitungan menit. Anda hanya butuh tempat bebas halangan dan mengarah langsung ke langit.
               </p>
               <p className="mb-10 text-sm leading-relaxed text-gray-300 md:text-base">
-                Unduh Aplikasi Starlink untuk menentukan lokasi pemasangan terbaik Anda.
+                Unduh Aplikasi NSC untuk menentukan lokasi pemasangan terbaik Anda.
               </p>
 
               <div className="flex flex-wrap items-center gap-6">
@@ -152,7 +152,7 @@ export default function Bisnis() {
             </div>
 
             <div className="relative aspect-square w-full flex-1 md:aspect-[4/3]">
-              <Image src="/online.webp" alt="Pemasangan Starlink" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover rounded-sm" />
+              <Image src="/online.webp" alt="Pemasangan NSC" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover rounded-sm" />
             </div>
           </div>
 
@@ -258,7 +258,7 @@ export default function Bisnis() {
               UJI COBA 30 HARI
             </h2>
             <p className="mb-12 max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg">
-              Jika tidak puas, Anda dapat mengembalikan Starlink untuk mendapatkan pengembalian dana penuh.
+              Jika tidak puas, Anda dapat mengembalikan NSC untuk mendapatkan pengembalian dana penuh.
             </p>
 
             <div className="flex w-full max-w-2xl flex-col gap-2 text-left">

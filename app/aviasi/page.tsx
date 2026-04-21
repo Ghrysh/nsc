@@ -59,7 +59,7 @@ export default function Aviasi() {
                 <div className="absolute inset-0 z-0 h-full w-full">
                     <Image
                         src="/aviasihero.webp"
-                        alt="Menjelajah Bersama Starlink"
+                        alt="Menjelajah Bersama NSC"
                         fill
                         sizes="100vw"
                         className="object-cover object-center"
@@ -71,7 +71,7 @@ export default function Aviasi() {
 
                 <div className="relative z-10 flex w-full flex-col items-center px-4 text-center mt-10">
                     <h1 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-                        STARLINK UNTUK AVIASI
+                        NSC UNTUK AVIASI
                     </h1>
                     <div className="mb-8 text-base text-white drop-shadow-md md:text-lg leading-relaxed">
                         <p>
@@ -253,10 +253,10 @@ export default function Aviasi() {
                             style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}
                         >
                             {[
-                                { id: 1, title: "PRODUSEN PESAWAT", img: "/aviasi1.webp", desc: "Dari pesawat supersonik hingga helikopter dan VTOL, Starlink memiliki perangkat keras..." },
+                                { id: 1, title: "PRODUSEN PESAWAT", img: "/aviasi1.webp", desc: "Dari pesawat supersonik hingga helikopter dan VTOL, NSC memiliki perangkat keras..." },
                                 { id: 2, title: "MASKAPAI PENERBANGAN", img: "/aviasi2.webp", desc: "Dengan lebih dari 30.000 penerbangan di Terminal Aero kami yang memiliki keandalan tinggi..." },
                                 { id: 3, title: "OPERATOR PESAWAT CHARTER", img: "/aviasi3.webp", desc: "Hubungi kami untuk mempelajari cara kami mentransformasi pengalaman Pesawat charter..." },
-                                { id: 4, title: "PUSAT LAYANAN & DEALER", img: "/aviasi4.webp", desc: "Bermitralah dengan Starlink dalam Jaringan Dealer Starlink untuk mendapatkan manfaat..." }
+                                { id: 4, title: "PUSAT LAYANAN & DEALER", img: "/aviasi4.webp", desc: "Bermitralah dengan NSC dalam Jaringan Dealer NSC untuk mendapatkan manfaat..." }
                             ].map((card) => (
                                 <div key={card.id} className="flex min-w-[85vw] flex-col snap-start md:min-w-[380px] lg:min-w-[420px] flex-1 select-none">
                                     <div className="relative mb-6 aspect-video w-full overflow-hidden bg-[#111111] pointer-events-none">
@@ -292,7 +292,7 @@ export default function Aviasi() {
                     <div className="absolute inset-0 z-0 h-full w-full overflow-hidden">
                         <Image
                             src="/global.webp"
-                            alt="Jangkauan Global Starlink"
+                            alt="Jangkauan Global NSC"
                             fill
                             className="object-cover object-center opacity-70"
                         />
@@ -307,7 +307,7 @@ export default function Aviasi() {
                         </h2>
 
                         <p className="mb-24 max-w-4xl text-[13px] leading-relaxed text-gray-200 md:text-[15px]">
-                            Starlink telah menyediakan internet berkecepatan tinggi dan latensi rendah pada puluhan ribu penerbangan dan terus bertambah, memungkinkan penumpang tetap terhubung sejak mereka di pesawat dan sepanjang perjalanan di seluruh benua. Lihat <span className="font-bold text-white cursor-pointer hover:underline">PERTANYAAN UMUM</span> kami untuk mempelajari selengkapnya tentang tempat Starlink diizinkan untuk penggunaan aviasi saat bepergian.
+                            NSC telah menyediakan internet berkecepatan tinggi dan latensi rendah pada puluhan ribu penerbangan dan terus bertambah, memungkinkan penumpang tetap terhubung sejak mereka di pesawat dan sepanjang perjalanan di seluruh benua. Lihat <span className="font-bold text-white cursor-pointer hover:underline">PERTANYAAN UMUM</span> kami untuk mempelajari selengkapnya tentang tempat NSC diizinkan untuk penggunaan aviasi saat bepergian.
                         </p>
 
                         {/* Stats Grid */}
@@ -401,10 +401,10 @@ export default function Aviasi() {
                             </h2>
                             <div className="space-y-6 text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
                                 <p>
-                                    Laser ruang optik Starlink mentransmisikan data di seluruh konstelasi Starlink, memberikan layanan berkelanjutan di wilayah yang jauh dari stasiun SpaceX di Bumi—memberikan jangkauan untuk penerbangan di laut lepas dan wilayah kutub.
+                                    Laser ruang optik NSC mentransmisikan data di seluruh konstelasi NSC, memberikan layanan berkelanjutan di wilayah yang jauh dari stasiun SpaceX di Bumi—memberikan jangkauan untuk penerbangan di laut lepas dan wilayah kutub.
                                 </p>
                                 <p>
-                                    Dengan 9.000+ laser di konstelasinya, Starlink mampu mentransmisikan lebih dari 10+ PB traffic data setiap hari. Laser ini dapat mempertahankan koneksi 100 Gbps per link, dapat menghubungkan hingga 3.300 mil (5.300+ km), dan mempertahankan jaringan mesh dengan uptime 99,99%.
+                                    Dengan 9.000+ laser di konstelasinya, NSC mampu mentransmisikan lebih dari 10+ PB traffic data setiap hari. Laser ini dapat mempertahankan koneksi 100 Gbps per link, dapat menghubungkan hingga 3.300 mil (5.300+ km), dan mempertahankan jaringan mesh dengan uptime 99,99%.
                                 </p>
                             </div>
                         </div>
@@ -443,7 +443,7 @@ export default function Aviasi() {
                                         Andal
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "Starlink cepat sekali. Di pesawat, kecepatannya 200 Mbps. Bahkan lebih cepat dari banyak internet perumahan di Amerika Utara. Ini seperti online di rumah atau di kantor. Produk rancangan SpaceX ini sangat andal dan cepat."
+                                        "NSC cepat sekali. Di pesawat, kecepatannya 200 Mbps. Bahkan lebih cepat dari banyak internet perumahan di Amerika Utara. Ini seperti online di rumah atau di kantor. Produk rancangan SpaceX ini sangat andal dan cepat."
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Alex Wilcox, Rekan Pendiri dan CEO JSX
@@ -454,7 +454,7 @@ export default function Aviasi() {
                                         Teknologi Signifikan
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "Melalui Starlink, SpaceX telah menciptakan kemajuan teknologi paling signifikan untuk perjalanan jet pribadi yang pernah ada dalam 2 dekade terakhir. Konektivitas yang andal sangat penting bagi Pemilik kami, dan untuk pertama kalinya, teknologi tersebut hadir untuk memenuhi harapan ini."
+                                        "Melalui NSC, SpaceX telah menciptakan kemajuan teknologi paling signifikan untuk perjalanan jet pribadi yang pernah ada dalam 2 dekade terakhir. Konektivitas yang andal sangat penting bagi Pemilik kami, dan untuk pertama kalinya, teknologi tersebut hadir untuk memenuhi harapan ini."
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Jay Heublein, Wakil Presiden Senior Pemeliharaan FlexJet

@@ -129,7 +129,7 @@ export default function Mobile() {
                 <div className="absolute inset-0 z-0 h-full w-full">
                     <Image
                         src="/mobile-hero.webp"
-                        alt="Menjelajah Bersama Starlink"
+                        alt="Menjelajah Bersama NSC"
                         fill
                         sizes="100vw"
                         className="object-cover object-center"
@@ -141,7 +141,7 @@ export default function Mobile() {
 
                 <div className="relative z-10 flex w-full flex-col items-center px-4 text-center mt-10">
                     <h1 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-                        STARLINK MOBILE
+                        NSC MOBILE
                     </h1>
                     <div className="mb-8 max-w-3xl text-base text-white drop-shadow-md md:text-lg leading-relaxed">
                         <p>
@@ -150,7 +150,7 @@ export default function Mobile() {
                     </div>
                     <div className="mb-10 max-w-3xl text-sm text-white drop-shadow-md md:text-lg leading-relaxed">
                         <p>
-                            Melalui satelit generasi terbarunya, Starlink Mobile kini menghadirkan broadband langsung ke ponsel.
+                            Melalui satelit generasi terbarunya, NSC Mobile kini menghadirkan broadband langsung ke ponsel.
                         </p>
                     </div>
                     <div className="mb-10 max-w-3xl text-sm font-bold text-white drop-shadow-md md:text-lg leading-relaxed">
@@ -242,7 +242,7 @@ export default function Mobile() {
                     </h2>
 
                     <p className="mb-16 text-[15px] text-gray-200">
-                        Akses global resiprokal tersedia untuk penyedia layanan seluler di semua negara mitra dengan Starlink Mobile
+                        Akses global resiprokal tersedia untuk penyedia layanan seluler di semua negara mitra dengan NSC Mobile
                     </p>
 
                     <div className="flex flex-col space-y-5 text-[13px] font-bold text-white tracking-wide">
@@ -300,7 +300,7 @@ export default function Mobile() {
                 <div className="relative mt-16 w-full max-w-full aspect-[2/1] md:aspect-[6/3]">
                     <Image
                         src="/map.webp"
-                        alt="Peta Mitra Global Starlink"
+                        alt="Peta Mitra Global NSC"
                         fill
                         className="object-cover object-top"
                     />
@@ -319,7 +319,7 @@ export default function Mobile() {
                         KONEKTIVITAS YANG MENYELAMATKAN NYAWA
                     </h2>
                     <p className="mx-auto max-w-4xl text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
-                        Starlink Mobile memungkinkan komunikasi penting saat jangkauan sinyal konvensional tidak tersedia untuk tim aksi cepat, tim penanggulangan bencana, dan masyarakat yang terkena dampak bencana alam serta keadaan darurat lainnya.
+                        NSC Mobile memungkinkan komunikasi penting saat jangkauan sinyal konvensional tidak tersedia untuk tim aksi cepat, tim penanggulangan bencana, dan masyarakat yang terkena dampak bencana alam serta keadaan darurat lainnya.
                     </p>
                 </div>
 
@@ -422,7 +422,7 @@ export default function Mobile() {
                             MENARA SELULER DI LUAR ANGKASA
                         </h2>
                         <p className="text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
-                            Layanan Starlink Mobile dapat diakses melalui ponsel LTE milik Anda di semua tempat dengan bidang pandang bebas halangan. Satelit Starlink memiliki antena yang berfungsi seperti menara seluler di ruang angkasa, antena phased array paling canggih di dunia yang terhubung dengan mulus melalui laser ke titik mana pun di dunia, memungkinkan integrasi jaringan yang mirip dengan mitra roaming standar.
+                            Layanan NSC Mobile dapat diakses melalui ponsel LTE milik Anda di semua tempat dengan bidang pandang bebas halangan. Satelit NSC memiliki antena yang berfungsi seperti menara seluler di ruang angkasa, antena phased array paling canggih di dunia yang terhubung dengan mulus melalui laser ke titik mana pun di dunia, memungkinkan integrasi jaringan yang mirip dengan mitra roaming standar.
                         </p>
                     </div>
 
@@ -442,7 +442,7 @@ export default function Mobile() {
             </section>
 
             {/* ========================================= */}
-            {/* SECTION 5: MASA DEPAN STARLINK MOBILE     */}
+            {/* SECTION 5: MASA DEPAN NSC MOBILE     */}
             {/* ========================================= */}
             <section className="relative flex min-h-[80vh] w-full flex-col md:flex-row bg-black">
 
@@ -459,17 +459,17 @@ export default function Mobile() {
                 <div className="flex flex-1 flex-col justify-center bg-black px-8 py-16 md:px-16 lg:px-24">
                     <div className="max-w-xl text-left">
                         <h2 className="mb-8 text-3xl font-bold uppercase leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
-                            MASA DEPAN STARLINK MOBILE
+                            MASA DEPAN NSC MOBILE
                         </h2>
                         <div className="space-y-6 text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
                             <p>
-                                Satelit Starlink Mobile generasi berikutnya, V2, akan memberikan jangkauan seluler penuh ke tempat-tempat yang sebelumnya dianggap tidak memungkinkan melalui jaringan satelit ke seluler berperforma tertinggi yang pernah dibuat.
+                                Satelit NSC Mobile generasi berikutnya, V2, akan memberikan jangkauan seluler penuh ke tempat-tempat yang sebelumnya dianggap tidak memungkinkan melalui jaringan satelit ke seluler berperforma tertinggi yang pernah dibuat.
                             </p>
                             <p>
                                 Didukung oleh silikon dan antena phased array yang dirancang khusus oleh SpaceX, satelit akan mendukung ribuan spatial beam dan kemampuan bandwidth yang lebih tinggi, memungkinkan sekitar 20x kemampuan throughput dibandingkan dengan satelit generasi pertama.
                             </p>
                             <p>
-                                Dengan konektivitas Starlink Mobile V2, operator jaringan seluler dapat mengurangi upaya dalam jaringan terestrial sekaligus membuka layanan tanpa batas di daerah terpencil dan memungkinkan jangkauan total di mana saja untuk pelanggan.
+                                Dengan konektivitas NSC Mobile V2, operator jaringan seluler dapat mengurangi upaya dalam jaringan terestrial sekaligus membuka layanan tanpa batas di daerah terpencil dan memungkinkan jangkauan total di mana saja untuk pelanggan.
                             </p>
                         </div>
                     </div>
@@ -488,7 +488,7 @@ export default function Mobile() {
                         </h2>
                         <div className="space-y-6 text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
                             <p>
-                                Di sebagian besar lingkungan, Starlink Mobile V2 akan memungkinkan konektivitas seluler 5G penuh dengan pengalaman yang sebanding dengan layanan terestrial saat ini.
+                                Di sebagian besar lingkungan, NSC Mobile V2 akan memungkinkan konektivitas seluler 5G penuh dengan pengalaman yang sebanding dengan layanan terestrial saat ini.
                             </p>
                             <p>
                                 Dalam kemitraan dengan Operator Jaringan Seluler, jaringan V2 akan meningkatkan jaringan 5G terestrial berkapasitas tinggi. Pelanggan akan dapat menikmati konektivitas internet berkecepatan tinggi di ponsel mereka, dengan kemampuan untuk, antara lain, streaming film, melakukan panggilan video, mendengarkan podcast, dan bekerja dari jarak jauh—bertransisi secara lancar antara jaringan satelit dan terestrial tanpa gangguan atau penurunan kualitas layanan.
@@ -526,10 +526,10 @@ export default function Mobile() {
                             DIRANCANG OLEH SPACEX
                         </h2>
                         <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                            SpaceX memanfaatkan pengalamannya dalam pembuatan dan peluncuran roket dan pesawat ruang angkasa tercanggih di dunia untuk menyebarkan satelit Starlink dengan kemampuan Starlink Mobile dalam skala besar.
+                            SpaceX memanfaatkan pengalamannya dalam pembuatan dan peluncuran roket dan pesawat ruang angkasa tercanggih di dunia untuk menyebarkan satelit NSC dengan kemampuan NSC Mobile dalam skala besar.
                         </p> <br />
                         <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                            Satelit Starlink Mobile awalnya diluncurkan oleh roket Falcon 9 SpaceX, dan satelit generasi berikutnya akan disebarkan oleh Starship. Saat mengorbit, satelit akan seketika terhubung melalui backhaul laser ke konstelasi Starlink untuk menyediakan konektivitas global.
+                            Satelit NSC Mobile awalnya diluncurkan oleh roket Falcon 9 SpaceX, dan satelit generasi berikutnya akan disebarkan oleh Starship. Saat mengorbit, satelit akan seketika terhubung melalui backhaul laser ke konstelasi NSC untuk menyediakan konektivitas global.
                         </p>
                     </div>
                 </div>
@@ -540,7 +540,7 @@ export default function Mobile() {
                     Hubungi Kami
                 </h2>
                 <p className="mb-10 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
-                    Pelajari cara Starlink Mobile dapat memperluas jaringan Anda.
+                    Pelajari cara NSC Mobile dapat memperluas jaringan Anda.
                 </p>
                 <button className="rounded-sm bg-white px-12 py-3.5 text-[11px] font-bold uppercase tracking-widest text-black transition-colors hover:bg-gray-200">
                     Hubungi Kami

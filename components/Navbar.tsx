@@ -66,8 +66,12 @@ export default function Navbar() {
         } ${isScrolled && isHome ? "top-[46px]" : "top-0"}`}
       >
         <div className="flex items-center gap-10">
-          <Link href="/" className="text-2xl font-bold tracking-[0.2em] text-white uppercase">
-            NSC
+          <Link href="/" className="tracking-[0.2em] flex items-center">
+            <img 
+              src="nsclogo.svg" 
+              alt="NSC Logo" 
+              className="h-5 w-auto md:h-6 lg:h-7"
+            />
           </Link>
           <div className="hidden space-x-6 lg:flex">
             {/* LOGIKA MENU KIRI DINAMIS & UNDERLINE AKTIF */}

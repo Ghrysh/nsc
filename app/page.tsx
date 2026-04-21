@@ -10,7 +10,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.webp" 
-            alt="Starlink Background"
+            alt="NSC Background"
             fill
             className="object-cover object-center"
             priority
@@ -182,7 +182,7 @@ export default function Home() {
               <div className="relative aspect-square w-full max-w-[600px]">
                 <Image
                   src="/orbit.webp"
-                  alt="Starlink Setup"
+                  alt="NSC Setup"
                   fill
                   className="object-contain"
                 />
@@ -224,7 +224,7 @@ export default function Home() {
               <div className="relative aspect-video w-full max-w-[650px] md:aspect-square">
                 <Image
                   src="/image2.webp"
-                  alt="Starlink Service"
+                  alt="NSC Service"
                   fill
                   className="object-contain object-center md:object-right"
                 />

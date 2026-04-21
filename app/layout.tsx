@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import { VercelToolbar } from '@vercel/toolbar/next';
 
 export const metadata = {
-  title: "Starlink",
+  title: "NSC",
   description: "Clone by NSC",
 };
 
