@@ -401,7 +401,7 @@ export default function Aviasi() {
                             </h2>
                             <div className="space-y-6 text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
                                 <p>
-                                    Laser ruang optik NSC mentransmisikan data di seluruh konstelasi NSC, memberikan layanan berkelanjutan di wilayah yang jauh dari stasiun SpaceX di Bumi—memberikan jangkauan untuk penerbangan di laut lepas dan wilayah kutub.
+                                    Laser ruang optik NSC mentransmisikan data di seluruh konstelasi NSC, memberikan layanan berkelanjutan di wilayah yang jauh dari stasiun NSC di Bumi—memberikan jangkauan untuk penerbangan di laut lepas dan wilayah kutub.
                                 </p>
                                 <p>
                                     Dengan 9.000+ laser di konstelasinya, NSC mampu mentransmisikan lebih dari 10+ PB traffic data setiap hari. Laser ini dapat mempertahankan koneksi 100 Gbps per link, dapat menghubungkan hingga 3.300 mil (5.300+ km), dan mempertahankan jaringan mesh dengan uptime 99,99%.
@@ -443,7 +443,7 @@ export default function Aviasi() {
                                         Andal
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "NSC cepat sekali. Di pesawat, kecepatannya 200 Mbps. Bahkan lebih cepat dari banyak internet perumahan di Amerika Utara. Ini seperti online di rumah atau di kantor. Produk rancangan SpaceX ini sangat andal dan cepat."
+                                        "NSC cepat sekali. Di pesawat, kecepatannya 200 Mbps. Bahkan lebih cepat dari banyak internet perumahan di Amerika Utara. Ini seperti online di rumah atau di kantor. Produk rancangan NSC ini sangat andal dan cepat."
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Alex Wilcox, Rekan Pendiri dan CEO JSX
@@ -454,7 +454,7 @@ export default function Aviasi() {
                                         Teknologi Signifikan
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "Melalui NSC, SpaceX telah menciptakan kemajuan teknologi paling signifikan untuk perjalanan jet pribadi yang pernah ada dalam 2 dekade terakhir. Konektivitas yang andal sangat penting bagi Pemilik kami, dan untuk pertama kalinya, teknologi tersebut hadir untuk memenuhi harapan ini."
+                                        "Melalui NSC, NSC telah menciptakan kemajuan teknologi paling signifikan untuk perjalanan jet pribadi yang pernah ada dalam 2 dekade terakhir. Konektivitas yang andal sangat penting bagi Pemilik kami, dan untuk pertama kalinya, teknologi tersebut hadir untuk memenuhi harapan ini."
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Jay Heublein, Wakil Presiden Senior Pemeliharaan FlexJet
@@ -465,7 +465,7 @@ export default function Aviasi() {
                                         Jangkauan Global
                                     </h4>
                                     <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-sm">
-                                        "SpaceX benar-benar memecahkan tantangan, secara harfiah, dalam hal teknologi, untuk dapat menyediakan bandwidth besar dengan konektivitas berkualitas sangat tinggi di pesawat terbang dengan jangkauan global."
+                                        "NSC benar-benar memecahkan tantangan, secara harfiah, dalam hal teknologi, untuk dapat menyediakan bandwidth besar dengan konektivitas berkualitas sangat tinggi di pesawat terbang dengan jangkauan global."
                                     </p>
                                     <p className="mt-auto text-[13px] text-gray-400">
                                         - Peter Ingram, CEO Hawaiian Airlines

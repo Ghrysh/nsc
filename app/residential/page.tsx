@@ -104,7 +104,7 @@ export default function Residensial() {
                     </div>
                     <div className="mb-10 text-sm font-medium text-white drop-shadow-md md:text-[15px] leading-relaxed">
                         <p>
-                            Pesan sebelum 23/4 | NSCindonesia@spacex.com | 007 803 6 219 919 (Telepon)<br />
+                            Pesan sebelum 23/4 | NSCindonesia@NSC.com | 007 803 6 219 919 (Telepon)<br />
                             +62 823 1001 0006 (WhatsApp)
                         </p>
                     </div>

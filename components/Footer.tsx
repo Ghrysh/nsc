@@ -38,11 +38,6 @@ export default function Footer() {
         <div className="flex flex-col items-start justify-between gap-4 lg:flex-row lg:items-center">
 
           <div className="flex flex-wrap items-center gap-4 text-[12px] text-gray-300">
-            <a href="#" className="text-white transition-opacity hover:opacity-70">
-              <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.008 4.076H5.036z" />
-              </svg>
-            </a>
             <span>© 2026 NSC, ALL RIGHTS RESERVED</span>
             <span>
               Internet Cepat Sampai Pelosok Negeri

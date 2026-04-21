@@ -255,7 +255,7 @@ export default function Maritim() {
                             NSC dirancang untuk pemasangan permanen di kapal Anda dan tahan dingin serta panas ekstrem, hujan es, hujan lebat, dan angin topan.
                         </p>
                         <p className="mb-6 text-sm leading-relaxed text-gray-200 drop-shadow-md md:text-[15px]">
-                            NSC saat ini digunakan untuk mendapatkan video berkualitas tinggi dari pendaratan roket SpaceX di laut, menghasilkan liputan tanpa terputus kendati mesin roket ini mampu menghasilkan gaya berkekuatan hingga 190.000 pon.
+                            NSC saat ini digunakan untuk mendapatkan video berkualitas tinggi dari pendaratan roket NSC di laut, menghasilkan liputan tanpa terputus kendati mesin roket ini mampu menghasilkan gaya berkekuatan hingga 190.000 pon.
                         </p>
                     </div>
                 </section>
@@ -767,7 +767,7 @@ export default function Maritim() {
                                     SOLUSI BARU
                                 </h4>
                                 <p className="mb-8 text-[13px] leading-relaxed text-gray-300 md:text-[15px]">
-                                    "Menggunakan layanan Low Earth Orbit, latensi rendah, dan bandwidth tinggi SpaceX NSC di seluruh armada kami adalah pencapaian besar dalam mengatasi tantangan konektivitas di industri dengan tenaga kerja yang global dan mobil. Dengan layanan ini, armada kami tak ubahnya menjadi kantor jarak jauh kami yang mendukung keselamatan dan kesejahteraan awak - dan membuat kami dapat mengembangkan solusi baru yang secara teknis dan finansial tidak dapat diwujudkan beberapa tahun lalu."
+                                    "Menggunakan layanan Low Earth Orbit, latensi rendah, dan bandwidth tinggi NSC NSC di seluruh armada kami adalah pencapaian besar dalam mengatasi tantangan konektivitas di industri dengan tenaga kerja yang global dan mobil. Dengan layanan ini, armada kami tak ubahnya menjadi kantor jarak jauh kami yang mendukung keselamatan dan kesejahteraan awak - dan membuat kami dapat mengembangkan solusi baru yang secara teknis dan finansial tidak dapat diwujudkan beberapa tahun lalu."
                                 </p>
                                 <p className="text-[13px] font-medium leading-relaxed text-gray-400 md:text-[14px]">
                                     - Torsten Pedersen, Chief Operating Officer, Seaspan Corporation

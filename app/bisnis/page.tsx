@@ -219,7 +219,7 @@ export default function Bisnis() {
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/space.webp"
-            alt="Dirancang oleh SpaceX"
+            alt="Dirancang oleh NSC"
             fill
             sizes="100vw"
             className="object-cover object-center"
@@ -229,10 +229,10 @@ export default function Bisnis() {
 
         <div className="relative z-10 mt-10 flex w-full max-w-lg flex-col items-start text-left">
           <h2 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight text-white md:text-5xl">
-            DIRANCANG OLEH SPACEX
+            DIRANCANG OLEH NSC
           </h2>
           <p className="mb-8 text-base leading-relaxed text-gray-200 drop-shadow-md">
-            Sebagai penyedia layanan peluncuran terkemuka di dunia—dan satu-satunya penyedia dengan roket orbital yang dapat digunakan kembali—SpaceX sangat berpengalaman dalam hal pesawat ruang angkasa dan operasi di orbit.
+            Sebagai penyedia layanan peluncuran terkemuka di dunia—dan satu-satunya penyedia dengan roket orbital yang dapat digunakan kembali—NSC sangat berpengalaman dalam hal pesawat ruang angkasa dan operasi di orbit.
           </p>
           <button className="rounded-sm border-[1.5px] border-white bg-transparent px-8 py-3 text-[11px] font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black">
             PELAJARI SELENGKAPNYA

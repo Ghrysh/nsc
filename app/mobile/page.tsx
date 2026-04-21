@@ -466,7 +466,7 @@ export default function Mobile() {
                                 Satelit NSC Mobile generasi berikutnya, V2, akan memberikan jangkauan seluler penuh ke tempat-tempat yang sebelumnya dianggap tidak memungkinkan melalui jaringan satelit ke seluler berperforma tertinggi yang pernah dibuat.
                             </p>
                             <p>
-                                Didukung oleh silikon dan antena phased array yang dirancang khusus oleh SpaceX, satelit akan mendukung ribuan spatial beam dan kemampuan bandwidth yang lebih tinggi, memungkinkan sekitar 20x kemampuan throughput dibandingkan dengan satelit generasi pertama.
+                                Didukung oleh silikon dan antena phased array yang dirancang khusus oleh NSC, satelit akan mendukung ribuan spatial beam dan kemampuan bandwidth yang lebih tinggi, memungkinkan sekitar 20x kemampuan throughput dibandingkan dengan satelit generasi pertama.
                             </p>
                             <p>
                                 Dengan konektivitas NSC Mobile V2, operator jaringan seluler dapat mengurangi upaya dalam jaringan terestrial sekaligus membuka layanan tanpa batas di daerah terpencil dan memungkinkan jangkauan total di mana saja untuk pelanggan.
@@ -523,13 +523,13 @@ export default function Mobile() {
                 <div className="relative z-10 flex h-full flex-col items-end justify-start px-8 pt-32 md:px-16 lg:px-24 md:pt-40">
                     <div className="max-w-lg text-left">
                         <h2 className="mb-6 text-3xl font-bold uppercase leading-tight tracking-tight text-white drop-shadow-md md:text-4xl">
-                            DIRANCANG OLEH SPACEX
+                            DIRANCANG OLEH NSC
                         </h2>
                         <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                            SpaceX memanfaatkan pengalamannya dalam pembuatan dan peluncuran roket dan pesawat ruang angkasa tercanggih di dunia untuk menyebarkan satelit NSC dengan kemampuan NSC Mobile dalam skala besar.
+                            NSC memanfaatkan pengalamannya dalam pembuatan dan peluncuran roket dan pesawat ruang angkasa tercanggih di dunia untuk menyebarkan satelit NSC dengan kemampuan NSC Mobile dalam skala besar.
                         </p> <br />
                         <p className="text-base leading-relaxed text-gray-200 drop-shadow-md md:text-lg">
-                            Satelit NSC Mobile awalnya diluncurkan oleh roket Falcon 9 SpaceX, dan satelit generasi berikutnya akan disebarkan oleh Starship. Saat mengorbit, satelit akan seketika terhubung melalui backhaul laser ke konstelasi NSC untuk menyediakan konektivitas global.
+                            Satelit NSC Mobile awalnya diluncurkan oleh roket Falcon 9 NSC, dan satelit generasi berikutnya akan disebarkan oleh Starship. Saat mengorbit, satelit akan seketika terhubung melalui backhaul laser ke konstelasi NSC untuk menyediakan konektivitas global.
                         </p>
                     </div>
                 </div>

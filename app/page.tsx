@@ -236,12 +236,12 @@ export default function Home() {
         
       </div>
 
-      {/* --- SECTION 7: DIRANCANG OLEH SPACEX --- */}
+      {/* --- SECTION 7: DIRANCANG OLEH NSC --- */}
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero4.webp"
-            alt="Dirancang oleh SpaceX"
+            alt="Dirancang oleh NSC"
             fill
             className="object-cover object-center"
           />

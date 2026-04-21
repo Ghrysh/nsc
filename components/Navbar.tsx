@@ -70,7 +70,9 @@ export default function Navbar() {
             <img 
               src="nsclogo.svg" 
               alt="NSC Logo" 
-              className="h-5 w-auto md:h-6 lg:h-7"
+              className={`h-5 w-auto md:h-6 lg:h-7 transition-all duration-300 ${
+                !isScrolled ? "brightness-0 invert" : ""
+              }`}
             />
           </Link>
           <div className="hidden space-x-6 lg:flex">
